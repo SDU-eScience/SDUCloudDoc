@@ -1,82 +1,56 @@
+.. _Elastic_Stack:
+
 Elastic Stack
 ==============
+.. _Logstash:
 
-Elastic Stack Components
-------------------------
+Logstash
+---------
+Logstash processes logs.
 
-* There are four main components from the Elastic Stack:
+.. _Elasticsearch:
 
-  * Logstash - Processes logs
-  * Elasticsearch - Stores logs
-  * Kibana - Web interface for searching and visualizing logs
-  * Filebeat - Installed on iRODS servers that will send audit logs to Logstash
+Elasticsearch
+--------------
+Elasticsearch stores logs.
+
+.. _Kibana:
+
+Kibana
+--------------
+Kibana is a web interface for searching and visualizing logs.
 
 Elastic Stack Installation
 --------------------------
+* Server 
+  
+  Elastic Stack is installed on the :ref:`[index] server`.
 
-* Edit our Ansible hosts file with the target Elastic Server (Index Server) and Elastic Client (iRODS Servers) information
-  
-  * ELK Server
-  
-  .. code-block:: yml
-  
-     [index]
-     index.esciencecloud.sdu.dk
+* Version
 
-  
-  * ELK Client
-  
-  .. code-block:: yml
-  
-     [irods]
-     irods[1:2].esciencecloud.sdu.dk
-  
+  6.1.0
 
-* Run elk.yml playbook against our ELK server.
-
-  * ELK Server
- 
-  .. code-block:: yml
+* Dependencies
   
-     ansible-playbook -i hosts install/elk.yml
+  Java 8
 
-  * ELK Client
+.. note:: 
+   For more information on Elastic Stack installation, please refer to
+   `<https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html>`_
+   `<https://www.elastic.co/guide/en/logstash/current/installing-logstash.html>`_
+   `<https://www.elastic.co/guide/en/kibana/current/install.html>`_
 
-  .. code-block:: yml
+* Playbook
   
-     ansible-playbook -i hosts install/elk-client.yml
+  ``elk.yml`` is the playbook for the Elastic Stack installation.
 
+.. note::
+   For more information on our Elastic Stack installation, please refer to `<https://github.com/SDU-eScience/Ansible/blob/master/elk.yml>`_
 
 Elastic Stack Configuration
 ----------------------------
-
-Filebeat configuration
-^^^^^^^^^^^^^^^^^^^^^^
-
-Filebeat configuration file is in YAML format, which locates at ``/etc/filebeat/filebeat.yml``. Under paths sub section which belongs to the Filebeat prospectors section, commented out the default and added new entries to specify the path for the iRODS's log file.
-
-
-.. code-block:: yml
-
-
-   # Paths that should be crawled and fetched. Glob based paths.
-     paths:
-       - /var/lib/irods/log/audit.log*
-       #- c:\programdata\elasticsearch\logs\*
-
-
-Under Logstash output sub section which belongs to the Outputs section, we defined to use Logstash as the outputs when sending the iRODS's log file as data collection by the filebeat.
-
-
-.. code-block:: yml
-
-   output.logstash:
-   # The Logstash hosts
-     hosts: ["unit03.esciencecloud.sdu.dk:5044”]
-
 Logstash configuration
 ^^^^^^^^^^^^^^^^^^^^^^^
-
 Logstash configuration file is in the JSON format. It is in our case called ``audit.conf`` and  locates at ``/etc/logstash/conf.d``. It has three defined sections - ``ínput``, ``filter`` and ``output``.
 
 * The input section configures Logstash to read the messages from the "beats" queue.
@@ -93,35 +67,28 @@ The Logstash configuration file - ``audit.conf`` is shown as below.
        port => 5044
        codec => "json"
            }
-   }
-
+         }
    filter {
      date  {
        match => ["[msg][ts]", "UNIX_MS"]
            }
-   }
-
+         }
    output {
      elasticsearch {
        hosts => "localhost:9200"
        manage_template => false
        index => "audit_log2"
-     }
-
+          }
      stdout {
-       codec => rubydebug {
-     }
-   }
-  }
-
+       codec => rubydebug {}
+            }
+          }
 
 Kibana configuration
 ^^^^^^^^^^^^^^^^^^^^^
-
 Forward the port 5601 from your local terminal if you want to access Kibana web portal with ``http://localhost:5601`` through your local browser.
 
 .. code-block:: bash
-
 
    ssh -L 5601:172.22.240.12:5601 username@130.225.164.200 -N
 
@@ -134,10 +101,60 @@ Access Kibana web portal with ``http://localhost:5601`` and click the ``audit_lo
    :align:   center
 
 
-Log shipment diagram
----------------------
+Elastic Stack Client
+=====================
+.. _Filebeat:
 
-The following diagram illustrates how our iRODS audit log is shipped, processed, stored and visualized by using Elastic Stack.
+Filebeat
+---------
+Filebeat is installed on the iRODS servers. It ships audit logs which generated from :ref:`iRODS-Re-Audit plugin` to Logstash.
+
+Filebeat Installation
+----------------------
+* Server
+
+  Filebeat is installed on the :ref:`[irods] server`.
+
+* Version
+
+  6.1.0
+
+* Dependencies
+
+  Java 8 and Java 9 is not supported. 
+
+.. note::
+   For more information on Elastic Stack Client installation, please refer to `<https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation.html>`_
+
+* Playbook
+
+``elk-client.yml`` is the playbook for the Elastic Stack Client installation.
+
+.. note::
+   For more information on our Elastic Stack Client installation, please refer to `<https://github.com/SDU-eScience/Ansible/blob/master/elk-client.yml>`_
+
+Filebeat configuration
+^^^^^^^^^^^^^^^^^^^^^^
+Filebeat configuration file is in YAML format, which locates at ``/etc/filebeat/filebeat.yml``. Under paths sub section which belongs to the Filebeat prospectors section, commented out the default and added new entries to specify the path for the iRODS's log file.
+
+.. code-block:: yml
+
+   # Paths that should be crawled and fetched. Glob based paths.
+     paths:
+       - /var/lib/irods/log/audit.log*
+       #- c:\programdata\elasticsearch\logs\*
+
+Under Logstash output sub section which belongs to the Outputs section, we defined to use Logstash as the outputs when sending the iRODS's log file as data collection by the filebeat.
+
+.. code-block:: yml
+
+   output.logstash:
+   # The Logstash hosts
+     hosts: ["unit03.esciencecloud.sdu.dk:5044”]
+
+Log shipment diagram
+=====================
+The following diagram illustrates how our iRODS audit log is shipped, processed, stored and visualized by using Elastic Stack and its client.
 
 .. figure::  images/ELK-workflow.png
 

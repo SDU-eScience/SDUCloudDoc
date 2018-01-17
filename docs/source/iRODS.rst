@@ -2,42 +2,11 @@
 
 iRODS
 =====
-
-iRODS Usages
-------------
-
-iRODS is an open source data management software used by research organizations and government agencies worldwide. It is a middleware which in our case sits above the Ceph filesystem and our application.
-
-* We use iRODS mainly in three ways
-
-  * Manage data objects and metadata
-  * Configure resource
-  * Secure collaboration
-
-iRODS Deployments
------------------
-
-* Our iRODS deployment includes three key components
-
-  * an iRODS Metadata Catalog(iCAT) database
-  * a Catalog Provider
-  * a Catalog Consumer
-
+iRODS is an open source data management software used by research organizations and government agencies worldwide. It is a middleware which in our case sits above the Ceph filesystem and our application. Our iRODS deployment includes an iRODS Metadata Catalog(iCAT) database and two iRods servers.
+ 
 iCAT Database Instance Setups
------------------------------
-
-iRODS neither creates nor manages a database instance itself, just the tables within the database. Therefore, the database instance should be created and configured before installing iRODS. PostgreSQL is the database for us which is used to implement the iCAT database. The following PSQL was used for setting up our database.
-
-.. code-block:: psql
-
-   $ (sudo) su - postgres
-   postgres$ psql
-   psql> CREATE USER irods WITH PASSWORD 'testpassword';
-   psql> CREATE DATABASE "ICAT";
-   psql> GRANT ALL PRIVILEGES ON DATABASE "ICAT" TO irods;
-
-
-Run ``\l`` to view the permissions.
+-------------------------------
+iRODS neither creates nor manages a database instance itself, just the tables within the database. Therefore, the database instance should be created and configured before installing iRODS. :ref:`PostgreSQL` is the database server for us which is used to implement the iCAT database. ``db.yml`` is the playbook for handling database related tasks. The ``db-icat`` role creates the irods user, ICAT database and grant all the permissons. Run ``\l`` to view databases and permissions.
 
 .. code-block:: psql
 
@@ -54,34 +23,34 @@ Run ``\l`` to view the permissions.
 
 iRODS Server Installation
 -----------------------------------
-We used ansible to install iRODS and the ``irods.yml`` is the playbook for our iRODS installation. It locates at the root of ansible-irods folder. There are several dependencies for installing iRODS-such dependencies as Extra Packages for Enterprise Linux (EPEL) and iRODS database plugin for future connecting iRODS with postgreSQL database. 
+* Server
 
-* Basically to finish the installation, you have to complete the following three steps
+  iRODS is installed on the :ref:`[irods] server`.
 
-  * Install the public key and add the repository
-  * Install irods-server irods-database-plugin-postgres
-  * Upgrade all the installed packages
+* Version
 
-The following code which is included in our ``irods.yml`` shows the installation of EPEL.
+  4.2.1
 
-.. code-block:: yml
+* Dependencies
+ 
+  irods-database-plugin-postgres-4.2.1
 
-   - name: add epel repo
-     yum_repository:
-      name: epel
-      description: Fedora EPEL Repository
-      baseurl: https://download.fedoraproject.org/pub/epel/$releasever/
-               $basearch/
-      gpgcheck: yes
-      gpgkey: http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
-      enabled: yes
+.. note::
+   For more information on iRODS installation, please refer to `<https://irods.org/download/>`_
+
+* Playbook
+
+  ``irods.yml`` is the playbook for the iRODS installation.
+
+.. note::
+   For more information on our iRODS installation, please refer to `<https://github.com/SDU-eScience/Ansible/blob/master/irods.yml>`_
 
 iRODS Server Configuration
 ------------------------------------
 
 After installation, run ``setup_irods.py`` script to fullfil information of the iRODS Catalog Provider.
 
-.. code-block:: bash
+.. code-block:: text-only
 
    $ (sudo) python /var/lib/irods/scripts/setup_irods.py
 
@@ -95,7 +64,7 @@ The asked information is shown as below
    *  Service Account Name
    *  Service Account Group
    *  Catalog Service Role
-
+   
    2. Database Connection
 
    *  ODBC Driver
@@ -105,7 +74,7 @@ The asked information is shown as below
    *  Database User
    *  Database Password
    *  Stored Passwords Salt
-
+   
    3. iRODS Server Options
 
    *  Zone Name
@@ -115,19 +84,19 @@ The asked information is shown as below
    *  Control Plane Port
    *  Schema Validation Base URI
    *  iRODS Administrator Username
-
+   
    4. Keys and Passwords
 
    *  zone_key
    *  negotiation_key
    *  Control Plane Key
    *  iRODS Administrator Password
-
+   
    5. Vault Directory
 
 Once a server is up and running, you can view the environment settings by running
 
-.. code-block:: bash
+.. code-block:: text-only
 
    $ ienv
 

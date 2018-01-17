@@ -11,39 +11,42 @@ This documentation exists to provide an introduction of the  SDUCloud. The proje
 
 Overview, by components
 ========================
+* :ref:`Ansible`
+* :ref:`Ceph`
+* :ref:`iRODS`
+* :ref:`Zookeeper`
+* :ref:`Kafka`
+* :ref:`Filebeat`
+* :ref:`Logstash`
+* :ref:`Elasticsearch`
+* :ref:`Kibana`
+* :ref:`PostgreSQL`
+* :ref:`Pgpool_II`
+
+Overview, by design
+===================
 * UI
  * :ref:`Ktor`
  * :ref:`React`
 * Service
- * Authentication
+ * Authentication service
   * :ref:`WAYF`
- * Data Management
-  * :ref:`Ceph`
-  * :ref:`iRODS`
+  * :ref:`JSON Web Token(JWT)`
+ * HPC related service 
+  * :ref:`app-service`
+  * :ref:`auth-service`
+ * Storage related service
+  * :ref:`upload-service`
+  * :ref:`storage-service`
+ * Data analysing service
+  * :ref:`elastic-service`
+ * Data auditing service
   * :ref:`iRODS_Re_Audit_Plugin`
- * Data Pipline
-  * :ref:`Filebeat`
-  * :ref:`Elasticsearch`
-  * :ref:`Logstash`
-  * :ref:`Kibana`
-  * :ref:`Zookeeper`
-  * :ref:`Kafka`
+ * Logging service
+  * :ref:`kafka`
 * Database
- * :ref:`PostgreSQL`
- * :ref:`Pgpool_II`
-
-The diagram illustrates how components connected with each other.
- 
-
-.. image::  images/components_communication_diagram_2.png
-   :align:  center
-   :class:  components-communication
-
-
-Automation
-===========
-* :ref:`Ansible`
-
+ * :ref:`iCAT`
+ * :ref:`SDUClouddb`
 
 .. toctree::
    :maxdepth: 2
