@@ -30,11 +30,11 @@ Overview, by design
  * :ref:`React`
 * Service
  * Authentication service
-  * :ref:`WAYF`
-  * :ref:`JSON Web Token(JWT)`
+  * :ref:`auth-service`
+   * :ref:`WAYF`
+   * :ref:`JSON Web Token(JWT)`
  * HPC related service 
   * :ref:`app-service`
-  * :ref:`auth-service`
  * Storage related service
   * :ref:`upload-service`
   * :ref:`storage-service`
