@@ -32,7 +32,7 @@ Overview, by design
  * Authentication service
   * :ref:`auth-service`
    * :ref:`WAYF`
-   * :ref:`JSON Web Token(JWT)`
+   * :ref:`JWT (JSON Web Token)`
  * HPC related service 
   * :ref:`app-service`
  * Storage related service
@@ -42,8 +42,9 @@ Overview, by design
   * :ref:`elastic-service`
  * Data auditing service
   * :ref:`iRODS_Re_Audit_Plugin`
- * Logging service
+ * Data logging
   * :ref:`kafka`
+  * :ref:`ELK (Elastic Stack)`
 * Database
  * :ref:`iCAT`
  * :ref:`SDUClouddb`

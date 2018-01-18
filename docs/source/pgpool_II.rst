@@ -15,12 +15,9 @@ The pgpool-II user account
 Add a Unix user account to run pgpool-II. The user name is pgpool.
 
 
-.. code-block:: bash
-
-
+.. code-block:: text-only
 
    $ (sudo) useradd pgpool
-
 
 
 Configuring pcp.conf
@@ -28,22 +25,15 @@ Configuring pcp.conf
 
 PCP commands are UNIX commands which manipulate pgpool-II via the network. A PCP user and password for us has been declared in ``pcp.conf`` in ``/etc`` directory. A user postgres and its associated password has been written as one line using the following format:
 
-
-
 .. code-block:: text-only
 
- 
-
    postgres:[md5 encrypted password]
-
 
 
 [md5 encrypted password] can be produced with the pg_md5 command. The following command used to generate the md5 encrypted password for postgres user for us.
 
 
-
 .. code-block:: bash
-
 
    $ pg_md5 your_password
    1060b7b46a3bd36b3a0d66e0127d0517
@@ -59,14 +49,11 @@ In pgpool-II we use streaming replication mode which means that PostgreSQL serve
 
      # '*' accepts all incoming connections
      listen_addresses = '*'
-
      # The port number used by pgpool-II to listen for connections
      port = 9999
-
      # The directory where the UNIX domain socket accepting connections
      # for pgpool-II will be created
      socket_dir = '/var/run/postgresql/'
-
      # '*' accepts all incoming connections
      pcp_listen_addresses = '*'
 
@@ -80,68 +67,45 @@ In pgpool-II we use streaming replication mode which means that PostgreSQL serve
 
 * running mode settings
 
-  To enable ``streaming replication mode`` in pgpool-II, we have to firstly turn on ``master_slave_mode`` which is used to couple pgpool-II with another master/slave replication
-
-software in our case is ``streaming replication``, which PostgreSQL server is responsible for doing the actual data replication.
-
+  To enable streaming replication mode in pgpool-II, we have to firstly turn on ``master_slave_mode`` which is used to couple pgpool-II with another master/slave replication software in our case is ``streaming replication``, which PostgreSQL server is responsible for doing the actual data replication.
 
   .. code-block:: text-only
-
-
 
      # Setting to on enables the master/slave mode
 
      master_slave_mode = on
 
-
-
      # Suitable for PostgreSQL's built-in streaming replication function
 
      master_slave_sub_mode = 'stream'
 
-
-
 * backend settings
-
 
   We have three backends which pgpool communicates with. And they all needs to be specified by some parameters.
 
-
   .. code-block:: text-only
-
-
 
      # Host name or IP address to connect to for backend 0
 
      backend_hostname0 = 'localhost'
 
-
-
      # Port number for backend 0
 
      backend_port0 = 5432
-
-
 
      # Weight for backend 0 (only in load balancing mode)
 
      backend_weight0 = 1
 
-
-
      # Data directory for backend 0
 
      backend_data_directory0 = '/data'
-
-
 
      # Controls various backend behavior
 
      # ALLOW_TO_FAILOVER or DISALLOW_TO_FAILOVER
 
      backend_flag0 = 'ALLOW_TO_FAILOVER'
-
-
 
      backend_hostname1 = 'localhost'
 
@@ -152,8 +116,6 @@ software in our case is ``streaming replication``, which PostgreSQL server is re
      backend_data_directory1 = '/data1'
 
      backend_flag1 = 'ALLOW_TO_FAILOVER'
-
-
 
      backend_hostname2 = 'localhost'
 

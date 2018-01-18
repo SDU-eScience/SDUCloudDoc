@@ -18,34 +18,25 @@ Elasticsearch stores logs.
 
 Kibana
 --------------
-Kibana is a web interface for searching and visualizing logs.
+Kibana is a Web interface for searching and visualizing logs.
 
 Elastic Stack Installation
 --------------------------
-* Server 
-  
-  Elastic Stack is installed on the :ref:`[index] server`.
+* Playbook: elk.yml
 
-* Version
+* Role: elasticsearch, logstash, kibana
 
-  6.1.0
+* Version and Dependencies
 
-* Dependencies
-  
-  Java 8
-
-.. note:: 
-   For more information on Elastic Stack installation, please refer to
-   `<https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html>`_
-   `<https://www.elastic.co/guide/en/logstash/current/installing-logstash.html>`_
-   `<https://www.elastic.co/guide/en/kibana/current/install.html>`_
-
-* Playbook
-  
-  ``elk.yml`` is the playbook for the Elastic Stack installation.
+ * 6.1.0 (Java 8)
 
 .. note::
-   For more information on our Elastic Stack installation, please refer to `<https://github.com/SDU-eScience/Ansible/blob/master/elk.yml>`_
+
+   For more information on our Elastic Stack installation and configuration, please refer to
+   `<https://github.com/SDU-eScience/Ansible/blob/master/elk.yml>`_
+   `<https://github.com/SDU-eScience/Ansible/tree/master/roles/logstash>`_
+   `<https://github.com/SDU-eScience/Ansible/tree/master/roles/elasticsearch>`_
+   `<https://github.com/SDU-eScience/Ansible/tree/master/roles/kibana>`_
 
 Elastic Stack Configuration
 ----------------------------
@@ -111,27 +102,18 @@ Filebeat is installed on the iRODS servers. It ships audit logs which generated 
 
 Filebeat Installation
 ----------------------
-* Server
+* Playbook: elk-client.yml
 
-  Filebeat is installed on the :ref:`[irods] server`.
+* Role: filebeat
 
-* Version
+* Version and Dependencies
 
-  6.1.0
-
-* Dependencies
-
-  Java 8 and Java 9 is not supported. 
+ * 6.1.0 (Java 8 and Java 9 is not supported)
 
 .. note::
-   For more information on Elastic Stack Client installation, please refer to `<https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation.html>`_
-
-* Playbook
-
-``elk-client.yml`` is the playbook for the Elastic Stack Client installation.
-
-.. note::
-   For more information on our Elastic Stack Client installation, please refer to `<https://github.com/SDU-eScience/Ansible/blob/master/elk-client.yml>`_
+   For more information on our Elastic Stack Client installation, please refer to 
+   `<https://github.com/SDU-eScience/Ansible/blob/master/elk-client.yml>`_
+   `<https://github.com/SDU-eScience/Ansible/tree/master/roles/filebeat>`_
 
 Filebeat configuration
 ^^^^^^^^^^^^^^^^^^^^^^

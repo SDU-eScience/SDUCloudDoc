@@ -2,17 +2,7 @@
 
 Ansible
 ========
-We installed components against HPC nodes by ansible, which is an IT automation engine.
-
-Ansible Installation
---------------------
-* Server
-
-  Ansible is installed on the :ref:`[web] server`.
-
-* Version
-
-  2.3.1
+We install and deploy the system against HPC nodes by Ansible, which is an IT automation engine.
 
 .. note::
    For more information on Ansible installation, please refer to `<http://docs.ansible.com/ansible/latest/intro_installation.html#>`_
@@ -21,8 +11,10 @@ Ansible Inventory Configuration
 --------------------------------
 Ansible does different tasks against different nodes. Ansible’s inventory, which locates at ``/etc/ansible/hosts``, manages the information of all the used nodes. The configuration for our Ansible's inventory is shown as bellow.
 
+.. _servers:
+
 .. code-block:: yml
-   
+
    [web]
    web.esciencecloud.sdu.dk
    [index]
@@ -144,14 +136,5 @@ Roles
        └── templates
            └── postgres.sh.j2
 
-
-Installation Overview
-----------------------
-All the components are installed against the HPC nodes.
-
-.. image::  images/installed_components.png
-   :align:  center
-   :class:  components-installation
-
 .. note:
-   For more information on our Ansible installation and configuration, please refer to `<https://github.com/SDU-eScience/Ansible>`_
+   For more information on how we use Ansible to install, configure and deploy, please refer to `<https://github.com/SDU-eScience/Ansible>`_
