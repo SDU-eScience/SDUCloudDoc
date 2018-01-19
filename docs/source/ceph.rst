@@ -10,7 +10,7 @@ Ceph is an open-source, massively scalable, software-defined storage system whic
 
 Ceph Storage Cluster
 --------------------
-Ceph storage cluster deployments begin with setting up each Ceph Node, network and the Ceph Storage Cluster. A Ceph Storage Cluster requires at least one Ceph Monitor and at least two Ceph OSD Daemons. Our Ceph storage cluster includes five nodes - three nodes for ceph monitors and two nodes for ceph OSDs. Additional, three ceph-mgrs have been set up on each of the nodes which is running a ceph-mon daemon. By default, whichever ceph-mgr instance comes up first will be made active by the monitors, and the others will be standbys. The following shows the information of our ceph storage cluster.
+Ceph storage cluster deployments begin with setting up each Ceph Node, network and the Ceph Storage Cluster. A Ceph Storage Cluster requires at least one Ceph Monitor and at least two Ceph OSD Daemons. Our Ceph storage cluster includes five nodes - three nodes for Ceph monitors and two nodes for Ceph OSDs. Additional, three Ceph-mgrs have been set up on each of the nodes which is running a Ceph-mon daemon. By default, whichever Ceph-mgr instance comes up first will be made active by the monitors, and the others will be standbys. The following shows the information of our Ceph storage cluster.
 
 .. figure::  images/ceph_storage_cluster_original_crop_bright.png
    :align:   center
@@ -38,7 +38,7 @@ For more information on our Ceph ansible playbooks please refer to `<https://git
 Prometheus Plugin and Grafana
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Ceph Prometheus plugin provides a Prometheus exporter to pass on Ceph performance counters from the collection point in ceph-mgr. The exported data can be queried from Grafanawhich allows us to query, visualize, alert on the Ceph metrics. The following shows a Grafana dashboard which queries Prometheus for Ceph data.
+The Ceph Prometheus plugin provides a Prometheus exporter to pass on Ceph performance counters from the collection point in Ceph-mgr. The exported data can be queried from Grafanawhich allows us to query, visualize, alert on the Ceph metrics. The following shows a Grafana dashboard which queries Prometheus for Ceph data.
 
 .. figure::  images/grafana.png
    :align:   center
