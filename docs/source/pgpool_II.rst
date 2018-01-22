@@ -41,62 +41,62 @@ To set streaming replication mode, we reused the sample configuration file for s
 
 Connection settings
 
-  .. code-block:: text-only
+.. code-block:: text-only
 
-     # '*' accepts all incoming connections
-     listen_addresses = '*'
-     # The port number used by pgpool-II to listen for connections
-     port = 9999
-     # The directory where the UNIX domain socket accepting connections
-     # for pgpool-II will be created
-     socket_dir = '/var/run/postgresql/'
-     # '*' accepts all incoming connections
-     pcp_listen_addresses = '*'
-     # The port number used by PCP process to listen for connections
-     pcp_port = 9898
-     # The directory where the UNIX domain socket accepting connections
-     # for pgpool-II will be created
-     pcp_socket_dir = '/var/run/postgresql/'
+   # '*' accepts all incoming connections
+   listen_addresses = '*'
+   # The port number used by pgpool-II to listen for connections
+   port = 9999
+   # The directory where the UNIX domain socket accepting connections
+   # for pgpool-II will be created
+   socket_dir = '/var/run/postgresql/'
+   # '*' accepts all incoming connections
+   pcp_listen_addresses = '*'
+   # The port number used by PCP process to listen for connections
+   pcp_port = 9898
+   # The directory where the UNIX domain socket accepting connections
+   # for pgpool-II will be created
+   pcp_socket_dir = '/var/run/postgresql/'
 
 
 Running mode settings
 
 To enable streaming replication mode in Pgpool-II, firstly turn on the ``master_slave_mode``. By doing this, Pgpool-II can couple with PostgreSQL server  which is responsible for doing the actual data replication.
 
-  .. code-block:: text-only
+.. code-block:: text-only
 
-     # Setting to on enables the master/slave mode
-     master_slave_mode = on
-     # Suitable for PostgreSQL's built-in streaming replication function
-     master_slave_sub_mode = 'stream'
+   # Setting to on enables the master/slave mode
+   master_slave_mode = on
+   # Suitable for PostgreSQL's built-in streaming replication function
+   master_slave_sub_mode = 'stream'
 
 Backend settings
 
 We have three backends which pgpool communicates with. And they all needs to be specified by the parameters as below.
 
-  .. code-block:: text-only
+.. code-block:: text-only
 
-     # Host name or IP address to connect to for backend 0
-     backend_hostname0 = 'localhost'
-     # Port number for backend 0
-     backend_port0 = 5432
-     # Weight for backend 0 (only in load balancing mode)
-     backend_weight0 = 1
-     # Data directory for backend 0
-     backend_data_directory0 = '/data'
-     # Controls various backend behavior
-     # ALLOW_TO_FAILOVER or DISALLOW_TO_FAILOVER
-     backend_flag0 = 'ALLOW_TO_FAILOVER'
-     backend_hostname1 = 'localhost'
-     backend_port1 = 5433
-     backend_weight1 = 1
-     backend_data_directory1 = '/data1'
-     backend_flag1 = 'ALLOW_TO_FAILOVER'
-     backend_hostname2 = 'localhost'
-     backend_port2 = 5434
-     backend_weight2 = 1
-     backend_data_directory2 = '/data2'
-     backend_flag2 = 'ALLOW_TO_FAILOVER'
+   # Host name or IP address to connect to for backend 0
+   backend_hostname0 = 'localhost'
+   # Port number for backend 0
+   backend_port0 = 5432
+   # Weight for backend 0 (only in load balancing mode)
+   backend_weight0 = 1
+   # Data directory for backend 0
+   backend_data_directory0 = '/data'
+   # Controls various backend behavior
+   # ALLOW_TO_FAILOVER or DISALLOW_TO_FAILOVER
+   backend_flag0 = 'ALLOW_TO_FAILOVER'
+   backend_hostname1 = 'localhost'
+   backend_port1 = 5433
+   backend_weight1 = 1
+   backend_data_directory1 = '/data1'
+   backend_flag1 = 'ALLOW_TO_FAILOVER'
+   backend_hostname2 = 'localhost'
+   backend_port2 = 5434
+   backend_weight2 = 1
+   backend_data_directory2 = '/data2'
+   backend_flag2 = 'ALLOW_TO_FAILOVER'
 
 
 Load balancing settings

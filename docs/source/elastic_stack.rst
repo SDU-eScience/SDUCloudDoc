@@ -133,7 +133,7 @@ Under Logstash output sub section which belongs to the Outputs section, we defin
    # The Logstash hosts
      hosts: ["unit03.esciencecloud.sdu.dk:5044”]
 
-Log shipment diagram
+Log Shipment Diagram
 =====================
 The following diagram illustrates how our iRODS audit log is shipped, processed, stored and visualized by using Elastic Stack and its client.
 
