@@ -5,7 +5,7 @@ Ansible
 We install and deploy the system against HPC nodes by Ansible, which is an IT automation engine.
 
 .. note::
-   For more information on Ansible installation, please refer to `<http://docs.ansible.com/ansible/latest/intro_installation.html#>`_
+   For more information on Ansible installation, please refer to `<http://docs.ansible.com/ansible/latest/intro_installation.html>`_
    
 Ansible Inventory Configuration
 --------------------------------

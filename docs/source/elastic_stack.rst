@@ -86,7 +86,6 @@ Forward the port 5601 from your local terminal if you want to access Kibana web 
 
 Access Kibana web portal with ``http://localhost:5601`` and click the ``audit_log2`` index on the left side. The Kibana dashboard for monitoring our iRODS grid looks like the following.
 
-
 .. figure::  images/kibana.png
 
    :align:   center

@@ -34,12 +34,9 @@ iRODS Server Installation
 .. note::
 
    For more information on our iRODS installation and configuration, please refer to
-
    `<https://github.com/SDU-eScience/Ansible/blob/master/irods.yml>`_
-
    `<https://github.com/SDU-eScience/Ansible/tree/master/roles/irods>`_
   
-
 iRODS Server Configuration
 ------------------------------------
 After installation, run ``setup_irods.py`` script to fullfil information of the iRODS server.

@@ -1,4 +1,4 @@
-.. _iRODS_Re_Audit_Plugin:
+.. _iRODS-Re-Audit plugin:
 
 iRODS-Re-Audit Plugin
 ======================

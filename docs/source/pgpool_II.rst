@@ -29,7 +29,7 @@ PCP commands are UNIX commands which manipulate Pgpool-II via the network. A PCP
 
 [md5 encrypted password] can be produced with the pg_md5 command. The following command used to generate the md5 encrypted password for postgres user for us.
 
-.. code-block:: bash
+.. code-block:: text-only
 
    $ pg_md5 your_password
    1060b7b46a3bd36b3a0d66e0127d0517
@@ -39,7 +39,7 @@ Configuring pgpool.conf
 ^^^^^^^^^^^^^^^^^^^^^^^
 To set streaming replication mode, we reused the sample configuration file for streaming replication mode from pgpool-II installation. The file is located at ``/etc/pgpool.conf.sample-stream``. The main part of our pgpool-II configrations is shown as below.
 
-* connection settings
+Connection settings
 
   .. code-block:: text-only
 
@@ -59,7 +59,7 @@ To set streaming replication mode, we reused the sample configuration file for s
      pcp_socket_dir = '/var/run/postgresql/'
 
 
-* running mode settings
+Running mode settings
 
 To enable streaming replication mode in Pgpool-II, firstly turn on the ``master_slave_mode``. By doing this, Pgpool-II can couple with PostgreSQL server  which is responsible for doing the actual data replication.
 
@@ -70,7 +70,7 @@ To enable streaming replication mode in Pgpool-II, firstly turn on the ``master_
      # Suitable for PostgreSQL's built-in streaming replication function
      master_slave_sub_mode = 'stream'
 
-* backend settings
+Backend settings
 
 We have three backends which pgpool communicates with. And they all needs to be specified by the parameters as below.
 
@@ -96,9 +96,13 @@ We have three backends which pgpool communicates with. And they all needs to be 
      backend_port2 = 5434
      backend_weight2 = 1
      backend_data_directory2 = '/data2'
-     backend_flag2 = ‘ALLOW_TO_FAILOVER'
+     backend_flag2 = 'ALLOW_TO_FAILOVER'
 
 
-* load balancing settings
+Load balancing settings
  
-We enabled load balancing so that pgpool-II could send the writing queries to the primay node, and other queries got load balanced among all backend nodes. To which node the load balancing mechanism sends read queries is decided at the session start time and will not be changed until the session ends. For more information on which query should be sent to which node in load balancing in streaming replication mode, please refer to `<http://www.pgpool.net/docs/latest/en/html/runtime-config-load-balancing.html>`_.
+We enabled load balancing so that pgpool-II could send the writing queries to the primay node, and other queries got load balanced among all backend nodes. To which node the load balancing mechanism sends read queries is decided at the session start time and will not be changed until the session ends. 
+
+.. note::
+
+   For more information on which query should be sent to which node in load balancing (streaming replication mode), please refer to `<http://www.pgpool.net/docs/latest/en/html/runtime-config-load-balancing.html>`_
