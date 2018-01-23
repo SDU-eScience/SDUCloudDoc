@@ -35,7 +35,8 @@ Our configuration that deploys ``luminous`` version of Ceph with OSDs:
 
 .. note::
 
-   For more information on our Ceph ansible playbooks please refer to `<https://github.com/SDU-eScience/eScienceCloud/tree/master/playbooks/ceph>`_
+   For more information on our Ceph ansible playbooks please refer to 
+   `<https://github.com/SDU-eScience/eScienceCloud/tree/master/playbooks/ceph>`_
 
 Prometheus Plugin and Grafana
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

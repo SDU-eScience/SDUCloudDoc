@@ -42,7 +42,7 @@ Elastic Stack Configuration
 ----------------------------
 Logstash configuration
 ^^^^^^^^^^^^^^^^^^^^^^^
-Logstash configuration file is in the JSON format. It is in our case called ``audit.conf`` and  locates at ``/etc/logstash/conf.d``. It has three defined sections - ``ínput``, ``filter`` and ``output``.
+Logstash configuration file is in the JSON format. It is called ``audit.conf`` and  locates at ``/etc/logstash/conf.d``. It has three defined sections - ínput, filter and output.
 
 * The input section configures Logstash to read the messages from the "beats" queue.
 * The date filter parses dates from [msg][ts] fields, and then timestamp as UNIX_MS which is one of the logstash accepted timestamp.

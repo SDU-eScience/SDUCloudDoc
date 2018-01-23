@@ -61,7 +61,7 @@ Connection settings
 
 Running mode settings
 
-To enable streaming replication mode in Pgpool-II, firstly turn on the ``master_slave_mode``. By doing this, Pgpool-II can couple with PostgreSQL server  which is responsible for doing the actual data replication.
+To enable streaming replication mode in Pgpool-II, firstly turn on the master_slave_mode. By doing this, Pgpool-II can couple with PostgreSQL server  which is responsible for doing the actual data replication.
 
 .. code-block:: text-only
 

@@ -2,11 +2,11 @@
 
 iRODS
 =====
-iRODS is an open source data management software used by research organizations and government agencies worldwide. It is a middleware which in our case sits above the Ceph filesystem and our application. Our iRODS deployment includes an iRODS Metadata Catalog(iCAT) database and two iRODS servers.
+iRODS is an open source data management software used by research organizations and government agencies worldwide. It is a middleware which in our case sits above the Ceph filesystem and our application. Our iRODS deployment includes an iRODS Metadata Catalog (iCAT) database and two iRODS servers.
  
 iCAT Database Instance Setups
 -------------------------------
-iRODS neither creates nor manages a database instance itself, just the tables within the database. Therefore, the database instance should be created and configured before installing iRODS. :ref:`PostgreSQL` is the database server for us which is used to implement the iCAT database. ``db.yml`` is the playbook for handling database related tasks. The ``db-icat`` role creates the irods user, ICAT database and grant all the permissons. Run ``\l`` to view databases and permissions.
+iRODS neither creates nor manages a database instance itself, just the tables within the database. Therefore, the database instance should be created and configured before installing iRODS. :ref:`PostgreSQL` is the database server for us which is used to implement the iCAT database. ``db.yml`` is the playbook for handling database related tasks. The db-icat role creates the irods user, ICAT database and grant all the permissons. Run \l to view databases and permissions.
 
 .. code-block:: psql
 
