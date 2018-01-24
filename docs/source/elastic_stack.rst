@@ -77,14 +77,14 @@ The Logstash configuration file - ``audit.conf`` is shown as below.
 
 Kibana configuration
 ^^^^^^^^^^^^^^^^^^^^^
-Forward the port 5601 from your local terminal if you want to access Kibana web portal with ``http://localhost:5601`` through your local browser.
+Forward the port 5601 from your local terminal if you want to access Kibana web portal with http://localhost:5601 through your local browser.
 
 .. code-block:: bash
 
    ssh -L 5601:172.22.240.12:5601 username@130.225.164.200 -N
 
 
-Access Kibana web portal with ``http://localhost:5601`` and click the ``audit_log2`` index on the left side. The Kibana dashboard for monitoring our iRODS grid looks like the following.
+Access Kibana web portal with http://localhost:5601 and click the audit_log2 index on the left side. The Kibana dashboard for monitoring our iRODS grid looks like the following.
 
 .. figure::  images/kibana.png
 

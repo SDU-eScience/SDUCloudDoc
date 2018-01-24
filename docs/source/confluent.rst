@@ -5,6 +5,7 @@ Confluent Platform
 Confluent Platform is an Apache Kafka-based streaming platform. It simplifies connecting data sources to Kafka, building applications with Kafka, as well as securing, monitoring, and managing our Kafka infrastructure.
 
 .. note::
+   
    For more information on Confluent Platform, please refer to `<https://docs.confluent.io/current/platform.html>`_
 
 
@@ -29,14 +30,18 @@ Confluent Installation
 
 Kafka
 ------
-Kafka is a distributed streaming platform. We use Kafka to take data from log messages, services and user activity.
+Kafka is a distributed streaming platform. We use Kafka to build and process our streaming data pipeline. It allow us to
 
+* Publish and subscribe to streams of records.
+* Store streams of records in a fault-tolerant way.
+* Process streams of records as they occur.
+
+Kafka Streams
+^^^^^^^^^^^^^
+Kafka Streams is a client library for building applications and microservices, where the input and output data are stored in Kafka clusters.
 
 .. _Zookeeper:
 
 Zookeeper
 ---------
 Zookeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.
- 
-
-
