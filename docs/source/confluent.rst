@@ -36,9 +36,13 @@ Kafka is a distributed streaming platform. We use Kafka to build and process our
 * Store streams of records in a fault-tolerant way.
 * Process streams of records as they occur.
 
+.. note::
+  
+   For more information on Kafka, please refer to `<https://kafka.apache.org/intro>`_
+
 Kafka Streams
 ^^^^^^^^^^^^^
-Kafka Streams is a client library for building applications and microservices, where the input and output data are stored in Kafka clusters. By implementing Kafka Streams API to our micro-services, we are able to build an real-time data pipeline to log users' activities, such activities as uplaoding a file, running an application and starting a job against HPCs.
+Kafka Streams is a client library for building applications and micro-services, where the input and output data are stored in Kafka clusters. By implementing Kafka Streams API to our micro-services, we are able to build an real-time data pipeline to log users' activities, such activities as uplaoding a file, running an application and starting a job against HPCs.
 
 .. note::
 
@@ -48,7 +52,7 @@ Kafka Streams is a client library for building applications and microservices, w
 
 Zookeeper
 ---------
-Zookeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. Our application is implemented by lots of micro-services, all the mircro-services are designed in a way that they can be discovered, monitored and configured seamlessly. Therefore, we use Zookeeper for our microservice registration and discovery.
+Zookeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. Our application consists of lots micro-services, all the mircro-services are designed in a way that they can be discovered, monitored and configured seamlessly. Therefore, we use Zookeeper for our micro-services registration and discovery.
 
 .. note::
 
