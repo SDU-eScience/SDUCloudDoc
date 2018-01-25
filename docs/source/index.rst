@@ -24,29 +24,11 @@ Overview, by components
 
 Overview, by design
 ===================
-* UI
- * :ref:`Ktor`
- * :ref:`React`
-* Service
- * Authentication service
-  * :ref:`auth-service`
-   * :ref:`WAYF`
-   * :ref:`JWT (JSON Web Token)`
- * HPC related service 
-  * :ref:`app-service`
- * Storage related service
-  * :ref:`upload-service`
-  * :ref:`storage-service`
- * Data analysing service
-  * :ref:`elastic-service`
- * Data auditing service
-  * :ref:`iRODS_Re_Audit_Plugin`
- * Data logging
-  * :ref:`kafka`
-  * :ref:`ELK (Elastic Stack)`
-* Database
- * :ref:`iCAT`
- * :ref:`SDUClouddb`
+There are some key design considerations for our application.
+
+* :ref:`Modularity`
+* :ref:`Fault-tolerance`
+* :ref:`Security`
 
 .. toctree::
    :maxdepth: 2
