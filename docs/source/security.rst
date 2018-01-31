@@ -34,7 +34,7 @@ In our application, when the user successfully logs in using their credentials, 
 
 Authorization
 -------------
-Users and Permissions
+Roles and Permissions
 ``````````````````````
   
 * Leader -
@@ -42,14 +42,6 @@ Users and Permissions
 * Admin -
 * Data facilitator -
 * App Designer -
-
-
-ACLs (Acces Control Lists)
-```````````````````````````
-
-* Owner - The owner of a data object has full control of the file.
-* Read - 
-* Write -
 
 
 File Sensitivity Level
@@ -118,13 +110,18 @@ The Ceph Prometheus plugin provides a Prometheus exporter to pass on Ceph perfor
 
 Confidentiality
 ----------------
-(Here will talk about data encryption)
+ACLs (Access Control Lists)
+```````````````````````````
+* Owner - The owner of a data object has full control of the file.
+* Read -
+* Write -
+
+
+Encryption
+``````````
 
 Integrity
 ---------
 
 Availability
 -------------
-
-Data Visualization
--------------------
