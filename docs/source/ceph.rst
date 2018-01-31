@@ -38,13 +38,6 @@ Our configuration that deploys ``luminous`` version of Ceph with OSDs:
    For more information on our Ceph ansible playbooks please refer to 
    `<https://github.com/SDU-eScience/eScienceCloud/tree/master/playbooks/ceph>`_
 
-Prometheus Plugin and Grafana
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The Ceph Prometheus plugin provides a Prometheus exporter to pass on Ceph performance counters from the collection point in Ceph-mgr. The exported data can be queried from Grafanawhich allows us to query, visualize, alert on the Ceph metrics. The following shows a Grafana dashboard which queries Prometheus for Ceph data.
-
-.. figure::  images/grafana.png
-   :align:   center
-
 
 iRODS RADOS Resource Plugin
 ---------------------------

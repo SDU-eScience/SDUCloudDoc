@@ -5,7 +5,7 @@
 
 Welcome to SDUCloud's documentation!
 =============================================
-This documentation exists to provide an introduction of the  SDUCloud. The project aims to provide easy access to national HPC infrastructures, like the Abacus 2.0 supercomputer, allowing a researcher to run complex or heavy computations on a supercomputer in a completely seamless and automatic way. 
+This documentation exists to provide an introduction of the SDUCloud. The project aims to provide easy access to national HPC infrastructures, like the Abacus 2.0 supercomputer, allowing a researcher to run complex or heavy computations on a supercomputer in a completely seamless and automatic way. 
 
 
 Overview, by components
@@ -21,23 +21,21 @@ Overview, by components
 * :ref:`Kibana`
 * :ref:`PostgreSQL`
 * :ref:`Pgpool_II`
+* :ref:`Components_of_Communication`
 
 Overview, by design
 ===================
-There are some key design considerations for our application.
-
+* :ref:`Security`
 * :ref:`Modularity`
 * :ref:`Fault-tolerance`
-* :ref:`Security`
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
    
 Indices and tables
 ==================
-
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
 
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Contents:

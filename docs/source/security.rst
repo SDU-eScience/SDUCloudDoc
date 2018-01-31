@@ -8,7 +8,8 @@ Authentication
 .. _WAYF:
 
 WAYF (Where Are You From)
-``````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 WAYF is a Single Sign-On system which permits using one single login to access several Web based services (`<http://www.wayf.dk/>`_). It creates connection between our application and many provided institutions. 
 
 Only persons who are associated with an institution that uses WAYF can log on our application. 
@@ -30,26 +31,21 @@ JSON Web Tokens are an open, industry standard (`RFC 7519 <https://tools.ietf.or
 
 In our application, when the user successfully logs in using their credentials, a JWT will be returned and saved. Whenever the user wants to access a service, the JWT will be sent to the service in the authorization header using the Bearer schema. The service checks for a valid JWT in the authorization header, and if it's present, the user will be allowed to access the service.
 
-(Here comes a diagram)
 
 Authorization
 -------------
-Roles and Permissions
-``````````````````````
-  
-* Leader -
-* Team member -
-* Admin -
-* Data facilitator -
-* App Designer -
-
+Project Roles and Permissions
+```````````````````````````````
+* Principal Investigator (PI)
+* Member
+* Admin
+* Data Facilitator
 
 File Sensitivity Level
 ```````````````````````
-
-* Open access -  
-* Confidential - 
-* Sensitive -
+* Open Access
+* Confidential 
+* Sensitive
 
 
 Auditing and Logging
@@ -97,8 +93,6 @@ Kafka
 ``````
 Our application consists of microservices, which use Kafka Streams API - a Java library to transform events into real-time data pipeline. 
 
-(Here needs to be discussed what is exactly the advantages of using Kafka from security perspective)
- 
 
 Prometheus Plugin and Grafana
 ``````````````````````````````
@@ -112,16 +106,6 @@ Confidentiality
 ----------------
 ACLs (Access Control Lists)
 ```````````````````````````
-* Owner - The owner of a data object has full control of the file.
-* Read -
-* Write -
-
-
-Encryption
-``````````
-
-Integrity
----------
-
-Availability
--------------
+* Owner
+* Read
+* Write
