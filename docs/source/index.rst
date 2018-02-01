@@ -29,17 +29,10 @@ Overview, by design
 * :ref:`Modularity`
 * :ref:`Fault-tolerance`
 
-
-.. toctree::
-   :maxdepth: 3
-   :caption: Contents:
    
-   ansible.rst
-   ceph.rst
-
 .. toctree::
    :maxdepth: 2
-   
+
 
 Indices and tables
 ==================
