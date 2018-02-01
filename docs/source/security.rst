@@ -34,15 +34,17 @@ In our application, when the user successfully logs in using their credentials, 
 
 Authorization
 -------------
-Project Roles and Permissions
-```````````````````````````````
+Roles and Permissions
+-------------
+
 * Principal Investigator (PI)
 * Member
 * Admin
 * Data Facilitator
 
 File Sensitivity Level
-```````````````````````
+----------------------
+
 * Open Access
 * Confidential 
 * Sensitive
