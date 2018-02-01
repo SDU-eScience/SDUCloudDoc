@@ -10,6 +10,7 @@ This documentation exists to provide an introduction of the SDUCloud. The projec
 
 Overview, by components
 ========================
+* :ref:`Components_of_Communication`
 * :ref:`Ansible`
 * :ref:`Ceph`
 * :ref:`iRODS`
@@ -21,21 +22,33 @@ Overview, by components
 * :ref:`Kibana`
 * :ref:`PostgreSQL`
 * :ref:`Pgpool_II`
-* :ref:`Components_of_Communication`
 
 Overview, by design
 ===================
 * :ref:`Security`
 * :ref:`Modularity`
 * :ref:`Fault-tolerance`
-   
-Indices and tables
-==================
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
+   
+   ansible.rst
+   ceph.rst
+
+.. toctree::
+   :maxdepth: 2
+   
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+
+
+
