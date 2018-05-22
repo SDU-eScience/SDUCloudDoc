@@ -84,12 +84,6 @@ Forward the port 5601 from your local terminal if you want to access Kibana web 
    ssh -L 5601:172.22.240.12:5601 username@130.225.164.200 -N
 
 
-Access Kibana web portal with http://localhost:5601 and click the audit_log2 index on the left side. The Kibana dashboard for monitoring our iRODS grid looks like the following.
-
-.. figure::  images/kibana.png
-
-   :align:   center
-
 
 Elastic Stack Client
 =====================
@@ -97,7 +91,7 @@ Elastic Stack Client
 
 Filebeat
 ---------
-Filebeat is installed on the iRODS servers. It ships audit logs which generated from :ref:`iRODS-Re-Audit plugin` to Logstash.
+Filebeat is installed on the various servers. It ships audit logs which generated  into Logstash.
 
 Filebeat Installation
 ----------------------
@@ -116,7 +110,7 @@ Filebeat Installation
 
 Filebeat configuration
 ^^^^^^^^^^^^^^^^^^^^^^
-Filebeat configuration file is in YAML format, which locates at ``/etc/filebeat/filebeat.yml``. Under paths sub section which belongs to the Filebeat prospectors section, commented out the default and added new entries to specify the path for the iRODS's log file.
+Filebeat configuration file is in YAML format, which locates at ``/etc/filebeat/filebeat.yml``. Under paths sub section which belongs to the Filebeat prospectors section, commented out the default and added new entries to specify the path for the log file.
 
 .. code-block:: yml
 

@@ -13,7 +13,6 @@ Overview, by components
 * :ref:`Components_of_Communication`
 * :ref:`Ansible`
 * :ref:`Ceph`
-* :ref:`iRODS`
 * :ref:`Zookeeper`
 * :ref:`Kafka`
 * :ref:`Filebeat`

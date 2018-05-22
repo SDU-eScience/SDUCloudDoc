@@ -21,8 +21,6 @@ Ansible does different tasks against different nodes. Ansible’s inventory, whi
    index.esciencecloud.sdu.dk
    [db]
    db.esciencecloud.sdu.dk
-   [irods]
-   irods[1:2].esciencecloud.sdu.dk
    [ceph-mon]
    cephmon[1:3].esciencecloud.sdu.dk
    [ceph-osd]
@@ -40,8 +38,6 @@ Playbooks
    ├── db.yml
    ├── elk-client.yml
    ├── elk.yml
-   ├── irods-re-audit.yml
-   ├── irods.yml
 
 
 Roles
@@ -85,29 +81,6 @@ Roles
    │   └── templates
    │       ├── filebeat.conf.j2
    │       └── filebeat-default.conf.j2
-   ├── irods
-   │   ├── defaults
-   │   │   └── main.yml
-   │   ├── files
-   │   │   ├── epel.repo
-   │   │   └── renci-irods.repo
-   │   ├── tasks
-   │   │   ├── configurations.yml
-   │   │   ├── downgrade.yml
-   │   │   ├── main.yml
-   │   │   └── upgrade.yml
-   │   └── templates
-   │       └── irods-environment.conf.j2
-   ├── irods-re-audit
-   │   ├── defaults
-   │   │   └── main.yml
-   │   ├── files
-   │   ├── tasks
-   │   │   ├── configurations.yml
-   │   │   └── main.yml
-   │   └── templates
-   │       ├── irods-cmake.sh.j2
-   │       └── server.conf.j2
    ├── kibana
    │   ├── defaults
    │   │   └── main.yml

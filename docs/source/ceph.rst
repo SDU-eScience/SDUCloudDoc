@@ -39,6 +39,3 @@ Our configuration that deploys ``luminous`` version of Ceph with OSDs:
    `<https://github.com/SDU-eScience/eScienceCloud/tree/master/playbooks/ceph>`_
 
 
-iRODS RADOS Resource Plugin
----------------------------
-This iRODS plugin implements a direct access to Ceph/rados in the most efficient manner. Files in the iRODS namespace are mapped to objects in the rados key-blob store. In contrast to other plugins, the irados resource plugin does not need to cache or stage files, but gives you direct and parallel access to data. Internally, the plugin maps the POSIX like open, read, write, seek, unlink,stat, and close calls to the librados client's operations. To fully use the inherent rados cluster parallelity, iRODs files are split to multiple 4 MB files and uploads of large files open multiple parallel transfer threads.
