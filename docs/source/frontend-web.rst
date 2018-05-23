@@ -1,3 +1,5 @@
+.. _Frontend-web:
+
 # SDUCloud front-end `frontend-web`
 
 This service provides a web interface to access the the logged in user's data, and functionality for manipulation of said data.

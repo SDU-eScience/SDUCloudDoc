@@ -20,4 +20,4 @@ Backend modules
 * zenodo-service
 
 Frontend
-* frontend-web
+* :ref:`Frontend-web`

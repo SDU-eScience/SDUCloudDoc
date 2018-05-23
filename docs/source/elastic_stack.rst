@@ -18,7 +18,7 @@ Elasticsearch stores logs.
 
 Kibana
 --------------
-Kibana is a Web interface for searching and visualizing logs.
+Kibana is a Web interface for visualizing logs that have been imported into elasticsearch.
 
 Elastic Stack Installation
 --------------------------
@@ -28,7 +28,7 @@ Elastic Stack Installation
 
 * Version and Dependencies
 
- * 6.1.0 (Java 8)
+ * 6.2.2 (Java 8)
 
 .. note::
 
