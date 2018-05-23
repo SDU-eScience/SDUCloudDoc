@@ -3,21 +3,28 @@
 Modularity
 ===========
 
-Our application backend is structured by a collection of loosely coupled microservices. The benefit of decomposing our application into different smaller services is that it improves release cycles(development,test and deployment).
-(module names shown below are identical to the git name)
+Our application consists of a collection of loosely coupled microservices, helper components as well as the web frontend. The benefit of decomposing our application into different smaller services is that it improves release cycles(development,test and deployment).
+(names shown below are identical to the git name in the main repository)
  
-Backend modules
-* abc2-sync
-* client-core
-* service-common
-* api-gateway-service
-* app-service
-* auth-service
-* metadata-service
-* notification-service
-* storage-service 
-* upload-service
-* zenodo-service
+Microservices 
+==============
+
+* :ref:`Api-gateway-service`
+* :ref:`App-service`
+* :ref:`Auth-service`
+* :ref:`Metadata-service`
+* :ref:`Notification-service`
+* :ref:`Storage-service`
+* :ref:`Upload-service`
+* :ref:`Zenodo-service`
+
+Helper components
+=================
+
+* :ref:`Abc2-sync`
+* :ref:`Client-core`
+* :ref:`Service-common`
 
 Frontend
+========
 * :ref:`Frontend-web`
