@@ -7,6 +7,7 @@ Ceph Overview
 -------------
 
 Ceph is an open-source, massively scalable, software-defined storage system which provides object, block and file system storage from a single clustered platform.
+CephFs is the filesystem abstraction.
 
 Ceph Storage Cluster
 --------------------

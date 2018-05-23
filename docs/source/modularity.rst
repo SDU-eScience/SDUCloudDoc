@@ -1,12 +1,21 @@
 Modularity
 ===========
 
-Our application is structured by a collection of loosely coupled microservices. The benefit of decomposing our application into different smaller services is that it improves modularity and makes the application easier to understand, develop and test, such microservices are
+Our application backend is structured by a collection of loosely coupled microservices. The benefit of decomposing our application into different smaller services is that it improves release cycles(development,test and deployment).
+(module names shown below are identical to the git name)
  
-* app service
-* authentication service
-* upload service
-* person service
-* project service
-* storage service
-* elastic service 
+Backend modules
+* abc2-sync
+* api-gateway-service
+* app-service
+* auth-service
+* client-core
+* metadata-service
+* notification-service
+* service-common
+* storage-service 
+* upload-service
+* zenodo-service
+
+Frontend
+* frontend-web
