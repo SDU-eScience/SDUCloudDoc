@@ -1,12 +1,12 @@
-.. _Service-common:
+.. _Sduclouddb:
 
-Service-common
+Sduclouddb
 ==============
 
 Version
 -------
 
-1.0
+2.0
 
 Description
 -----------

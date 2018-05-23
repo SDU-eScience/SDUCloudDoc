@@ -8,7 +8,6 @@ Our application consists of a collection of loosely coupled microservices, helpe
  
 Microservices 
 ==============
-
 * :ref:`Api-gateway-service`
 * :ref:`App-service`
 * :ref:`Auth-service`
@@ -20,10 +19,13 @@ Microservices
 
 Helper components
 =================
-
 * :ref:`Abc2-sync`
 * :ref:`Client-core`
 * :ref:`Service-common`
+
+Database
+========
+* :ref:`Sduclouddb`
 
 Frontend
 ========
