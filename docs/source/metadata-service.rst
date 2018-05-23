@@ -1,6 +1,6 @@
-.. _Metadata-service
+.. _Metadata-service:
 
-Microservice: Metadata-service
-==============================
+Metadata-service
+================
 
 Awaiting content

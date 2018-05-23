@@ -1,6 +1,6 @@
 .. _Service-common:
 
-Helper component: Service-common
-================================
+Service-common
+==============
 
 Awaiting content

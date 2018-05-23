@@ -1,6 +1,6 @@
 .. _Client-core:
 
-Helper component: Client-code
-=============================
+Client-core
+===========
 
 Awaiting content

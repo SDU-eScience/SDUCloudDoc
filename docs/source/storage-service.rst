@@ -1,6 +1,6 @@
-.. _Storage-service
+.. _Storage-service:
 
-Microservice: Storage-service
-==============================
+Storage-service
+===============
 
 Awaiting content

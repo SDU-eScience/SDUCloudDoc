@@ -1,6 +1,6 @@
-.. _App-service
+.. _App-service:
 
-Microservice: App-service
-=========================
+App-service
+===========
 
 Awaiting content

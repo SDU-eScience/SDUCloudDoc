@@ -1,6 +1,6 @@
-.. _upload-service
+.. _upload-service:
 
-Microservice: Upload-service
-============================
+Upload-service
+==============
 
 Awaiting content

@@ -1,6 +1,6 @@
 .. _Api-gateway-service:
 
-Microservice: Api-gateway-service
-=================================
+Api-gateway-service
+===================
 
 Awaiting content

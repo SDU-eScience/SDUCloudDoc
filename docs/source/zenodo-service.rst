@@ -1,6 +1,6 @@
-.. _Zenodo-service
+.. _Zenodo-service:
 
-Microservice: Zenodo-service
-============================
+Zenodo-service
+==============
 
 Awaiting content

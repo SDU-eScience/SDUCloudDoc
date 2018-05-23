@@ -1,6 +1,6 @@
 .. _Auth-service:
 
-Microservice: Auth-service
-==========================
+Auth-service
+============
 
 Awaiting content

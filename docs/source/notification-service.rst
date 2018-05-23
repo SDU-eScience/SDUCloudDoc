@@ -1,6 +1,6 @@
-.. _Notification-service
+.. _Notification-service:
 
-Microservice: Notification-service
-==================================
+Notification-service
+====================
 
 Awaiting content
