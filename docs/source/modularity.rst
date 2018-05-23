@@ -1,3 +1,5 @@
+.. _Modularity:
+
 Modularity
 ===========
 
@@ -6,13 +8,13 @@ Our application backend is structured by a collection of loosely coupled microse
  
 Backend modules
 * abc2-sync
+* client-core
+* service-common
 * api-gateway-service
 * app-service
 * auth-service
-* client-core
 * metadata-service
 * notification-service
-* service-common
 * storage-service 
 * upload-service
 * zenodo-service

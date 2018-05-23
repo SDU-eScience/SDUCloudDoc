@@ -17,7 +17,7 @@ Confluent Installation
 
 * Version and Dependencies
 
- * Open Source 3.3.1 (Java 1.7 or later)
+ * Open Source 4.1.1 (Java 1.8 or later)
 
 .. note::
    

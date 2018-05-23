@@ -5,10 +5,10 @@
 
 Welcome to SDUCloud's documentation!
 =============================================
-This documentation exists to provide an introduction of the SDUCloud. The project aims to provide easy access to national HPC infrastructures, like the Abacus 2.0 supercomputer, allowing a researcher to run complex or heavy computations on a supercomputer in a completely seamless and automatic way and to provede a safe datastorage 
+This documentation exists to provide an introduction of the SDUCloud. The project aims to provide easy access to national HPC infrastructures, like the Abacus 2.0 supercomputer, allowing a researcher to run complex or heavy computations on a supercomputer in a completely seamless and automatic way and to provide a safe datastorage. 
 
 
-Overview, by components
+Overview, by open source components
 ========================
 * :ref:`Components_of_Communication`
 * :ref:`Ansible`
