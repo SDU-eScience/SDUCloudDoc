@@ -11,17 +11,16 @@ Version
 Description
 -----------
 
-Here goes the main description of its functionality
-
-
+The metadata-service makes it possible to add metadata to a project. This metadata is also made searchable by saving it in elasticsearch. 
 
 Service dependencies
 ------------------------
 
-Here a list of which of the helper components it depends on
-
+* :ref:`Auth-service`
+* :ref:`Service-common`
+* :ref:`Storage-service`
 
 Service interoperability
 ------------------------
 
-Here a list of which of the other services it interfaces to.
+* :ref:`Frontend-web`
