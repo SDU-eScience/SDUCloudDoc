@@ -19,7 +19,6 @@ Microservices
 
 Helper components
 =================
-* :ref:`Abc2-sync`
 * :ref:`Client-core`
 * :ref:`Service-common`
 
@@ -30,3 +29,10 @@ Database
 Frontend
 ========
 * :ref:`Frontend-web`
+* :ref:`Abc2-sync`
+
+
+Test Framework
+--------------
+* :ref:`Jmeter`
+* :ref:`Selenium`

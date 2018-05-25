@@ -21,6 +21,9 @@ Overview, by open source components
 * :ref:`Kibana`
 * :ref:`PostgreSQL`
 * :ref:`Pgpool_II`
+* :ref:`Jmeter`
+* :ref:`Selenium`
+
 
 Overview, by design
 ===================
