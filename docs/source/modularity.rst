@@ -36,3 +36,7 @@ Test Framework
 --------------
 * :ref:`Jmeter`
 * :ref:`Selenium`
+
+Deployment (ci/cd)
+
+* :ref:'Jenkins'

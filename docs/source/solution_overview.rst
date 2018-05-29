@@ -16,6 +16,14 @@ The 3. party components that are being used are provided by the open source comm
 
 The functionality follows the requirements from the NSAS description.
 
+Scaleability have has a high priority in the design specification of the solution. This target have been reach by implementing all the "moving parts"
+as micro services and event based messaging systems
+
+
+
+Security
+--------
+
 To secure that SduCloud is GDPR compliance following design patterns have been implemented :
 
 Access Controls
