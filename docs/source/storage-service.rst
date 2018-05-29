@@ -25,3 +25,7 @@ Service interoperability
 ------------------------
 
 Here a list of which of the other services it interfaces to.
+
+Tests
+-----
+
