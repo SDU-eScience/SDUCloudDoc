@@ -11,21 +11,110 @@ Version
 Description
 -----------
 
-Here goes the main description of its functionality
-
+This service handles all file system events.
 
 
 Service dependencies
 ------------------------
 
-Here a list of which of the helper components it depends on
-
+* :ref:`Auth-service`
+* :ref:`Notification-service`
+* :ref:`Service-common`
 
 Service interoperability
 ------------------------
 
-Here a list of which of the other services it interfaces to.
+* :ref:`app-service`
+* :ref:`Frontend-web`
+* :ref:`Metadata-service`
+* :ref:`Zenodo-service`
 
 Tests
 -----
+- Controllers
+	- Annotate Files:	
+		- Annotate file as Admin
+		- Annotate file as User
+		- Annotate file with illegal annotation
+		- Annotate file with illegal path
+	- Copy Files:
+		- Make a copy of a file
+		- Make a copy from a non-existing path
+		- Make a copy of a file to an already exisiting directory path
+	- Create Directories:
+		- Create a directory with correct input
+		- Create a directory in home
+		- Create a directory in non exisiting directory
+		- Create a directory that already exist
+	- Delete:
+		- Delete a folder
+		- Delete a file
+	- Favorites:
+		- Make a folder favorite and delete it
+		- make a file favorite and delete it
+	- ls
+		- List at correct path
+		- List at incorrect path
+		- List without Authentication
+	- Make Open Access
+		- Mark file as open access
+	- Move
+		- Move file
+	- Stat
+		- Stat file
+		- Stat non exisiting path
+	- Sync Files
+		- Sync folder path
+
+- Service code
+	- Bulk Download
+		- Make a bulk download
+		- Make a bulk download with missing files
+	- Bulk Upload
+		- From dir to file
+		- From file to dir
+		- Standard upload
+		- Overwrite
+		- Reject
+		- Rename
+		- Shell Injection
+	- Checksum
+		- Generate checksum using SHA1
+		- Generate checksum with illegal algorithm
+	- Copy
+		- Standard copy
+	- Favorites
+		- Create favorite
+		- Remove favorite
+	- FileSystem
+		- Output parsing
+		- Favorites in wrong format
+		- Type is not D,F or L
+		- Favorites
+	- Make
+		- Sanitize of path
+		- New dir already exists
+	- Move
+		- Move directory
+		- Move file
+		- Move to same location
+		- Move to nonexisiting location
+	- Remove
+		- Remove file
+		- Remove nonexisting
+	- Share
+		- Grant Share with low level failure
+		- Grant share with missing permission
+		- Share Grant
+		- Revoke Grant
+	- XAttr
+		- Basic passing
+
+
+
+
+
+
+
+
 
