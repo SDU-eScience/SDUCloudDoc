@@ -24,7 +24,7 @@ as micro services and a event based messaging system(Kafka).
 Application Overview
 ====================
 
-* :ref:`/screens/screens_main.rst`
+* :ref:`screens/screens_main.rst`
 
 
 
