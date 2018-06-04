@@ -4,15 +4,9 @@
 Screens
 ===========
 
-Version
--------
-
-1.0
-
-Description
------------
-
-Here goes the application flow
-
+Dashboard
+---------
+.. figure::  images/screens/dashboard/dashboard.png
+   :align:   center
 
 
