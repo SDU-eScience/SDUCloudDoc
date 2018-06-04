@@ -24,7 +24,16 @@ as micro services and a event based messaging system(Kafka).
 Application Overview
 ====================
 
-.. _Screens_main:
+Screens
+===========
+
+Dashboard
+---------
+.. figure::  images/screens/dashboard/dashboard.png
+   :align:   center
+
+
+
 
 
 
