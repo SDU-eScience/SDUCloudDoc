@@ -1,4 +1,5 @@
-.. _screens/Screens_main:
+. _Screens_main:
+
 
 Screens
 ===========
