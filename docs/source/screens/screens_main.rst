@@ -11,7 +11,7 @@ Version
 Description
 -----------
 
-Here goes the main description of its functionality
+Here goes the application flow
 
 
 
