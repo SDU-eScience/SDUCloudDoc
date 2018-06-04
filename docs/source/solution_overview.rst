@@ -54,7 +54,8 @@ Shares
 
 
 
-
+Design features
+===============
 
 Security
 --------
