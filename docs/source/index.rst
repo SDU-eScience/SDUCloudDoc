@@ -31,32 +31,36 @@ Application Screens
 Dashboard
 ---------
 .. figure::  images/screens/dashboard/dashboard.png
-:align:   center
+   :align:   center
+
+This is the entrypoint of the application
 
 Files
 -----
 .. figure::  images/screens/files/files.png
-:align:   center
+   :align:   center
+
+Awaits input from Jonas
 
 
 Applications
 ---------
 .. figure::  images/screens/applications/applications_list.png
-:align:   center
+   :align:   center
 
 
 Publications
 ------------
 .. figure::  images/screens/publications/publications.png
-:align:   center
+   :align:   center
 
 
 Shares
 ------
 .. figure::  images/screens/shares/shares.png
-:align:   center
+   :align:   center
 
-
+Awaits input from Jonas
 
 Design features
 ===============
@@ -77,8 +81,10 @@ All duties within the system are handled by services
 
 All transactions are authenticated by Json Web Tokens https://jwt.io/ (JSR7519) which is granted to each user session as part of the authorisation process.
 
+
 Certificates
 ------------
+Certificates have installed on all servers.
 
 
 Dataprotection
@@ -93,11 +99,11 @@ prevent unauthorized access, it is transparent to applications and users, it pro
 Auditing/Monitoring
 -------------------
 
-All subcomponents produces logs and audit trails.
+All subcomponents produces logs and audit trails. Filebeat/Logstash automatically collects all log files and their data are imported into Elastic Search (ELK-stack). The presentation tool used to present the logs is "Kibana".
 
-Automated monitoring of security and performance incidents to detect anomalous activity or behaviour.
+Automated monitoring of security and performance incidents to detect anomalous activity or behaviour including an automated escalation process including blocking of users or subcomponent if threat or odd behaviour is detected.
 
-Automated escalation process including blocking of users or subcomponent if threat or odd behaviour is detected.
+
 
 
 
