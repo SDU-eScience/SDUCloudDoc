@@ -68,7 +68,7 @@ Design features
 Security
 --------
 
-To secure that SduCloud is GDPR compliance following design patterns have been implemented :
+To secure that SduCloud is GDPR compliant following design patterns have been implemented :
 
 Access Controls
 ---------------
