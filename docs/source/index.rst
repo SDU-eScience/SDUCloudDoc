@@ -103,13 +103,17 @@ All subcomponents produces logs and audit trails. Filebeat/Logstash automaticall
 
 Automated monitoring of security and performance incidents to detect anomalous activity or behaviour including an automated escalation process including blocking of users or subcomponent if threat or odd behaviour is detected.
 
+The Ceph cluster monitor looks like this
+
+.. figure::  images/grafana.png
+   :align:   center
 
 
 
 
 
-Overview, by open source components
-========================
+Open source components
+======================
 * :ref:`Components_of_Communication`
 * :ref:`Ansible`
 * :ref:`Ceph`
