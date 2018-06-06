@@ -48,6 +48,8 @@ Applications
 .. figure::  images/screens/applications/applications_list.png
    :align:   center
 
+At the Applications screen the user is able to see all available applications that he/she can run on Abacus2.0. If the user hover above the name of an application he/she is able to get a description of the application. If the user press the run button he/she will be forwarded to that specific application setup and are able to add the input files that he/she would like to be included in the execution of the application.
+
 
 Publications
 ------------
