@@ -135,6 +135,8 @@ Overview, by design
 .. toctree::
    :maxdepth: 2
 
+   testincl.rst
+
 
 Indices and tables
 ==================
