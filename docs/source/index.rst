@@ -79,12 +79,16 @@ Privileged users are proxy users so all none system users are granted the least 
 
 All duties within the system are handled by services
 
-All transactions are authenticated by Json Web Tokens https://jwt.io/ (JSR7519) which is granted to each user session as part of the authorisation process.
+All transactions (frontend/backend) are authenticated by Json Web Tokens https://jwt.io/ (JSR7519) which is granted to each user session as part of the authorisation process. All transactions that are initiated through a user login can be traced.
+
+
+.. figure::  images/WAYF.png
+   :align:   center
 
 
 Certificates
 ------------
-Certificates have installed on all servers.
+Certificates have been installed on all servers.
 
 
 Dataprotection
@@ -106,6 +110,11 @@ Automated monitoring of security and performance incidents to detect anomalous a
 The Ceph cluster monitor looks like this
 
 .. figure::  images/grafana.png
+   :align:   center
+
+An example audit log
+
+.. figure::  images/kibana.png
    :align:   center
 
 
