@@ -40,3 +40,5 @@ Test Framework
 Deployment (ci/cd)
 =================
 * :ref:`Jenkins`
+
+.. include::`Testincl`
