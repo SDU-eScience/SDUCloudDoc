@@ -16,14 +16,15 @@ Introduction
 
 SduCloud have been designed and programmed at the eScience Center at the University Of Southern Denmark.
 
-The purpose is to provide a user interface the improves the usability of the HPC environment (Abacus2) for the common user. At the same time provide a data storage that secures the GDPR compliance as well as search in meta-data that have been stored in SduCloud.
+The purpose is to provide a user interface that improves the usability of the HPC environment (Abacus2) for the common user. At the same time provide a data storage that secures the GDPR compliance. Meta-data can be attached to the stored files so in SduCloud. The meta-data are made searchable within the user interface.
 
-The 3. party components that are being used are provided by the open source community.
+Files can be published through the integration to Zenodo.
+
+Its components are provided by the open source community.
 
 The functionality follows the requirements from the NSAS description.
 
-Scaleability have has a high priority in the design specification of the solution. This target have been reached by implementing all the "moving parts"
-as micro services and a event based messaging system(Kafka).
+Scaleability has a high priority in the design specification of the solution. This target have been reached by implementing all the "moving parts" as micro services and a event based messaging broker (Kafka).
 
 
 
@@ -75,12 +76,26 @@ Publications
    :align:   center
 
 
+Publishing provides tools for publishing to Zenodo. Publications will list an overview of publishings, with the possiblity of a more details for a specific upload, by clicking on the "Show More"-button. If the files for the publication have successfully been uploaded to Zenodo, "Finish publication at Zendodo" will transfer the user to Zendodo to finish the publication.
+
+The Publish option allows the user to upload a series of files to Zenodo from SDUCloud, by selecting them and supplying a name for the publication.
+
+
 Shares
 ------
 .. figure::  images/screens/shares/shares.png
    :align:   center
 
-Awaits input from Jonas
+Following either having recieved a sharing invitation or shared a file with another user, the two lists 'Shared with Me' and 'Shared by Me' will be populated.
+
+When a file is shared, the target user, or users, will receive a notification and the Shares-page will list both files that has been shared, and invitations. They also show the rights associated with the share, being READ, WRITE, and EXECUTE. If the file has been shared, the target user can revoke the sharing of the file, and if a user has been invited, they can Accept or Reject the invitation.
+
+For the user sending the invitation, the invitations are shown under 'Shared by Me'. The user is here able to revoke the sharing or update the rights associated with the share.
+
+
+
+
+
 
 Design features
 ===============
