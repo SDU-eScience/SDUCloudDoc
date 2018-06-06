@@ -28,7 +28,7 @@ Elastic Stack Installation
 
 * Version and Dependencies
 
- * 6.2.2 (Java 8)
+ * 6.4.3 (Java 8)
 
 .. note::
 
@@ -132,5 +132,4 @@ Log Shipment Diagram
 The following diagram illustrates how our iRODS audit log is shipped, processed, stored and visualized by using Elastic Stack and its client.
 
 .. figure::  images/ELK-workflow.png
-
    :align:   center
