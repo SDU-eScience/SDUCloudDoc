@@ -36,7 +36,7 @@ Dashboard
 .. figure::  images/screens/dashboard/dashboard.png
    :align:   center
 
-This is the entrypoint of the application
+This is the entrypoint of the application and gives the user a overview of recent activity.
 
 Files
 -----

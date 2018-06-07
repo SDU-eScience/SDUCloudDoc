@@ -11,7 +11,7 @@ Version
 Description
 -----------
 
-The metadata-service makes it possible to add metadata to a project or data object. The metadata is stored in Elasticsearch. The metadata is searchable from the user interface.
+The metadata-service makes it possible to add metadata to a project or data object. The metadata is stored in Elasticsearch. The metadata is searchable from within the user interface.
 
 Service dependencies
 ------------------------
