@@ -70,6 +70,27 @@ Applications
 At the Applications screen the user is able to see all available applications that he/she can run on Abacus2.0. If the user hover above the name of an application he/she is able to get a description of the application. If the user press the run button he/she will be forwarded to that specific application setup and are able to add the input files that he/she would like to be included in the execution of the application.
 
 
+.. figure::  images/screens/applications/run_application.png
+   :align:   center
+
+When the "Run" button on the selected application is clicked
+
+
+.. figure::  images/screens/applications/detailed_result_in_queue.png
+   :align:   center
+
+Gives the user information about how the app execution is progressing.
+
+
+
+.. figure::  images/screens/applications/detailed_result_finished.png
+   :align:   center
+
+When the app execution has finished with success.
+
+
+
+
 Publications
 ------------
 .. figure::  images/screens/publications/publications.png
