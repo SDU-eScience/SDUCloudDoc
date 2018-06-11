@@ -33,10 +33,26 @@ Application Screens
 
 Dashboard
 ---------
+
+This is the entrypoint of the application and gives the user a overview of recent activity. This view is showing 3 columns "Favorite Files", "Recently used Files", "Recent Analysis".
+
+"Favorite Files"
+
+The user can add a file to "favorite" which makes it easier to find when having to use it for several different purposes.
+
+"Recently used Files"
+
+Are files that the user have used earlier.
+
+"Recent Analysis"
+
+Are application that have been executed within the Application section
+
+
 .. figure::  images/screens/dashboard/dashboard.png
    :align:   center
 
-This is the entrypoint of the application and gives the user a overview of recent activity.
+
 
 Files
 -----
@@ -131,6 +147,15 @@ The Publish option allows the user to upload a series of files to Zenodo from SD
 .. figure::  images/screens/publications/publications.png
    :align:   center
 
+.. figure::  images/screens/publications/file_selection.png
+   :align:   center
+
+.. figure::  images/screens/publications/not_connected.png
+   :align:   center
+
+.. figure::  images/screens/publications/zenodo_progress.png
+   :align:   center
+
 
 
 
@@ -147,6 +172,8 @@ For the user sending the invitation, the invitations are shown under 'Shared by 
    :align:   center
 
 
+.. figure::  images/screens/shares/received_shares.png
+   :align:   center
 
 
 
