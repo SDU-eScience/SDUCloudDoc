@@ -73,6 +73,9 @@ Sharing of files, available in the dropdown, context menu, and has its own butto
 .. figure::  images/screens/files/files.png
    :align:   center
 
+
+The context menu that shows when a file have been selected from the list
+
 .. figure::  images/screens/files/context_menu.png
    :align:   center
 
@@ -154,6 +157,9 @@ The Publish option allows the user to upload a series of files to Zenodo from SD
    :align:   center
 
 .. figure::  images/screens/publications/zenodo_progress.png
+   :align:   center
+
+.. figure::  images/screens/publications/zenodo_website.png
    :align:   center
 
 
