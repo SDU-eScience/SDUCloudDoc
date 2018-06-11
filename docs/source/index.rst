@@ -40,78 +40,112 @@ This is the entrypoint of the application and gives the user a overview of recen
 
 Files
 -----
-.. figure::  images/screens/files/files.png
-   :align:   center
 
-For each file presented to the user, with few exceptions<sup>1</sup>, a series of operations can be made.
+For each file presented to the user, with few exceptions, a series of operations can be made.
 
 This includes Uploading of files, downloading of files, showing properties for a file or folder, moving of files, copying of files, deletion of files, and sharing of files.
 
-_Uploading of a file_ can be done by clicking the Upload Files button on the Files page, which will show a modal where the user can upload files. This can be done either by draggin the files or browsing using the OS'es native file browser. The files will be upladed to the current folder. If the file is a .tar.gz file, the uploader allows for extraction of the files.
+Download of a file is done by selecting a single file a folder and clicking the download button, either on the context menu, or on the file's dropdown. Downloading of a folder will be in the form of a .zip file.
 
-_Download of a file_ is done by selecting a single file a folder and clicking the download button, either on the context menu, or on the file's dropdown. Downloading of a folder will be in the form of a .zip file.
+Moving files or _copying files is available in the dropdown and context menu. A modal is shown providing the available locations for the operation. The files to be moved/copied, are excluded of the possible destinations.
 
-_Moving files_ or _copying files_ is available in the dropdown and context menu. A modal is shown providing the available locations for the operation. The files to be moved/copied, are excluded of the possible destinations.
+To delete files, available in the dropdown and context menu, select the files to be deleted. This will show a prompt to confirm the operation.
 
-To _delete files_, available in the dropdown and context menu, select the files to be deleted. This will show a prompt to confirm the operation.
-
-_Sharing of files_, available in the dropdown, context menu, and has its own button next to the dropdown, will prompt the user name and the associated rights for the user.
+Sharing of files, available in the dropdown, context menu, and has its own button next to the dropdown, will prompt the user name and the associated rights for the user.
 
 
+.. figure::  images/screens/files/files.png
+   :align:   center
 
-1. Not all functionality is available to folders Jobs, Favorites, and Trash Bin. Additionally, only folders can be projects.
+.. figure::  images/screens/files/context_menu.png
+   :align:   center
+
+.. figure::  images/screens/files/dropdown_menu.png
+   :align:   center
+
+.. figure::  images/screens/files/copy_move_modal.png
+   :align:   center
+
+.. figure::  images/screens/files/file_properties.png
+   :align:   center
+
+.. figure::  images/screens/files/new_folder.png
+   :align:   center
+
+.. figure::  images/screens/files/share.png
+   :align:   center
+
+
+Uploading of a file can be done by clicking the Upload Files button on the Files page, which will show a modal where the user can upload files. This can be done either by draggin the files or browsing using the OS'es native file browser. The files will be upladed to the current folder. If the file is a .tar.gz file, the uploader allows for extraction of the files.
+
+.. figure::  images/screens/files/upload_with_file.png
+   :align:   center
+
+.. figure::  images/screens/files/upload_with_no_file.png
+   :align:   center
+
+.. figure::  images/screens/files/uploading_file.png
+   :align:   center
+
+.. figure::  images/screens/files/uploading_no_file.png
+   :align:   center
 
 
 Applications
----------
+------------
+
+At the Applications screen the user is able to see all available applications that he/she can run on Abacus2.0. If the user hover above the name of an application he/she is able to get a description of the application. If the user press the run button he/she will be forwarded to that specific application setup and are able to add the input files that he/she would like to be included in the execution of the application.
 .. figure::  images/screens/applications/applications_list.png
    :align:   center
 
-At the Applications screen the user is able to see all available applications that he/she can run on Abacus2.0. If the user hover above the name of an application he/she is able to get a description of the application. If the user press the run button he/she will be forwarded to that specific application setup and are able to add the input files that he/she would like to be included in the execution of the application.
+
+When the "Run" button on the selected application is clicked
 
 
 .. figure::  images/screens/applications/run_application.png
    :align:   center
 
-When the "Run" button on the selected application is clicked
+
+Gives the user information about how the app execution is progressing.
 
 
 .. figure::  images/screens/applications/detailed_result_in_queue.png
    :align:   center
 
-Gives the user information about how the app execution is progressing.
 
+When the app execution has finished with success.
 
 
 .. figure::  images/screens/applications/detailed_result_finished.png
    :align:   center
 
-When the app execution has finished with success.
-
-
 
 
 Publications
 ------------
-.. figure::  images/screens/publications/publications.png
-   :align:   center
-
 
 Publishing provides tools for publishing to Zenodo. Publications will list an overview of publishings, with the possiblity of a more details for a specific upload, by clicking on the "Show More"-button. If the files for the publication have successfully been uploaded to Zenodo, "Finish publication at Zendodo" will transfer the user to Zendodo to finish the publication.
 
 The Publish option allows the user to upload a series of files to Zenodo from SDUCloud, by selecting them and supplying a name for the publication.
 
+.. figure::  images/screens/publications/publications.png
+   :align:   center
+
+
+
 
 Shares
 ------
-.. figure::  images/screens/shares/shares.png
-   :align:   center
 
 Following either having recieved a sharing invitation or shared a file with another user, the two lists 'Shared with Me' and 'Shared by Me' will be populated.
 
 When a file is shared, the target user, or users, will receive a notification and the Shares-page will list both files that has been shared, and invitations. They also show the rights associated with the share, being READ, WRITE, and EXECUTE. If the file has been shared, the target user can revoke the sharing of the file, and if a user has been invited, they can Accept or Reject the invitation.
 
 For the user sending the invitation, the invitations are shown under 'Shared by Me'. The user is here able to revoke the sharing or update the rights associated with the share.
+
+.. figure::  images/screens/shares/shares.png
+   :align:   center
+
 
 
 
