@@ -1,7 +1,6 @@
 .. _Frontend-web:
 
-================================================================================
-SDUCloud front-end `frontend-web`
+Front-end: cloud.sdu.dk
 ================================================================================
 
 This service provides a web interface to access the the logged in user's

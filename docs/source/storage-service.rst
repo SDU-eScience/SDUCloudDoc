@@ -16,7 +16,7 @@ This service handles all file system events.
 Service Dependencies
 --------------------------------------------------------------------------------
 
-This microservice has the following internal dependencies.
+This microservice has the following internal dependencies:
 
 * :ref:`auth-service`
 * :ref:`notification-service`
@@ -26,7 +26,7 @@ Service Interoperability
 --------------------------------------------------------------------------------
 
 The following is a non-exhaustive list of internal services which use this
-microservice.
+microservice:
 
 * :ref:`app-service`
 * :ref:`frontend-web`
@@ -35,6 +35,8 @@ microservice.
 
 Tests
 --------------------------------------------------------------------------------
+
+.. TODO Replace this with a link to CI test report
 
 - Controllers
 	- Files
