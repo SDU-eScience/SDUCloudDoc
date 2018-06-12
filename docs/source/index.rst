@@ -14,16 +14,19 @@ https://cloud.sdu.dk
 Introduction
 ------------
 
-SduCloud have been designed and programmed at the eScience Center at the University Of Southern Denmark.
-Its components are provided by the open source community.
+SduCloud have been designed and programmed at the eScience Center at the
+University Of Southern Denmark. Its components are provided by the open source
+community.
 
-The purpose is to provide a user interface that improves the usability of the HPC environment (Abacus2) for the common user. At the same time provide a data storage that secures the GDPR compliance. One of the overall goals is to improve the searcheability for data that are already stored in SduCloud.
-That is done by added meta-data to a stored file stored files so in SduCloud. The meta-data (data about data) are made searchable within the SduCloud user interface. Later other search engines can be attached to SduClouds meta-data service. Another example of the implemantation of "Open Access"
-is the integration to Zenodo.
-
-
-
-
+The purpose is to provide a user interface that improves the usability of the
+HPC environment (Abacus 2.0) for the common user. At the same time provide a 
+data storage that secures the GDPR compliance. One of the overall goals is to 
+improve the searcheability for data that are already stored in SduCloud. That is
+done by added meta-data to a stored file stored files so in SduCloud. The 
+meta-data (data about data) are made searchable within the SduCloud user 
+interface. Later other search engines can be attached to SduClouds meta-data 
+service. Another example of the implemantation of "Open Access" is the 
+integration to Zenodo.
 
 
 Application Screens
@@ -32,19 +35,24 @@ Application Screens
 Dashboard
 ---------
 
-This is the entrypoint of the application and gives the user a overview of recent activity. This view is showing 3 columns "Favorite Files", "Recently used Files", "Recent Analysis".
+This is the entrypoint of the application and gives the user a overview of
+recent activity. This view is showing 3 columns "Favorite Files", "Recently used
+Files", "Recent Analysis".
 
-"Favorite Files"
+"Favorite Files
 
-The user can add a file to "favorite" which makes it easier to find when having to use it for several different purposes.
+The user can add a file to "favorite" which makes it easier to find when having
+to use it for several different purposes.
 
-"Recently used Files"
+"Recently used Files
 
-Are files that the user have used earlier.
+Show files that the user have used earlier. This is sorted by time so that the 
+most recent is at top
 
-"Recent Analysis"
+"Recent Analysis
 
-Are application that have been executed within the Application section
+Contains links to applications that the user have executed within the
+Application section. 
 
 
 .. figure::  images/screens/dashboard/dashboard.png
@@ -55,17 +63,27 @@ Are application that have been executed within the Application section
 Files
 -----
 
-For each file presented to the user, with few exceptions, a series of operations can be made.
+For each file presented to the user, with few exceptions, a series of operations
+can be made.
 
-This includes Uploading of files, downloading of files, showing properties for a file or folder, moving of files, copying of files, deletion of files, and sharing of files.
+This includes Uploading of files, downloading of files, showing properties for a
+file or folder, moving of files, copying of files, deletion of files, and
+sharing of files.
 
-Download of a file is done by selecting a single file a folder and clicking the download button, either on the context menu, or on the file's dropdown. Downloading of a folder will be in the form of a .zip file.
+Download of a file is done by selecting a single file a folder and clicking the
+download button, either on the context menu, or on the file's dropdown.
+Downloading of a folder will be in the form of a .zip file.
 
-Moving files or _copying files is available in the dropdown and context menu. A modal is shown providing the available locations for the operation. The files to be moved/copied, are excluded of the possible destinations.
+Moving files or _copying files is available in the dropdown and context menu. A
+modal is shown providing the available locations for the operation. The files to
+be moved/copied, are excluded of the possible destinations.
 
-To delete files, available in the dropdown and context menu, select the files to be deleted. This will show a prompt to confirm the operation.
+To delete files, available in the dropdown and context menu, select the files to
+be deleted. This will show a prompt to confirm the operation.
 
-Sharing of files, available in the dropdown, context menu, and has its own button next to the dropdown, will prompt the user name and the associated rights for the user.
+Sharing of files, available in the dropdown, context menu, and has its own
+button next to the dropdown, will prompt the user name and the associated rights
+for the user.
 
 
 .. figure::  images/screens/files/files.png
@@ -93,7 +111,11 @@ The context menu that shows when a file have been selected from the list
    :align:   center
 
 
-Uploading of a file can be done by clicking the Upload Files button on the Files page, which will show a modal where the user can upload files. This can be done either by draggin the files or browsing using the OS'es native file browser. The files will be upladed to the current folder. If the file is a .tar.gz file, the uploader allows for extraction of the files.
+Uploading of a file can be done by clicking the Upload Files button on the Files
+page, which will show a modal where the user can upload files. This can be done
+either by draggin the files or browsing using the OS'es native file browser. The
+files will be upladed to the current folder. If the file is a .tar.gz file, the
+uploader allows for extraction of the files.
 
 .. figure::  images/screens/files/upload_with_file.png
    :align:   center
@@ -111,7 +133,13 @@ Uploading of a file can be done by clicking the Upload Files button on the Files
 Applications
 ------------
 
-At the Applications screen the user is able to see all available applications that he/she can run on Abacus2.0. If the user hover above the name of an application he/she is able to get a description of the application. If the user press the run button he/she will be forwarded to that specific application setup and are able to add the input files that he/she would like to be included in the execution of the application.
+At the Applications screen the user is able to see all available applications
+that he/she can run on Abacus 2.0. If the user hover above the name of an
+application he/she is able to get a description of the application. If the user
+press the run button he/she will be forwarded to that specific application setup
+and are able to add the input files that he/she would like to be included in the
+execution of the application.
+
 .. figure::  images/screens/applications/applications_list.png
    :align:   center
 
@@ -141,9 +169,14 @@ When the app execution has finished with success.
 Publications
 ------------
 
-Publishing provides tools for publishing to Zenodo. Publications will list an overview of publishings, with the possiblity of a more details for a specific upload, by clicking on the "Show More"-button. If the files for the publication have successfully been uploaded to Zenodo, "Finish publication at Zendodo" will transfer the user to Zendodo to finish the publication.
+Publishing provides tools for publishing to Zenodo. Publications will list an
+overview of publishings, with the possiblity of a more details for a specific
+upload, by clicking on the "Show More"-button. If the files for the publication
+have successfully been uploaded to Zenodo, "Finish publication at Zendodo" will
+transfer the user to Zendodo to finish the publication.
 
-The Publish option allows the user to upload a series of files to Zenodo from SDUCloud, by selecting them and supplying a name for the publication.
+The Publish option allows the user to upload a series of files to Zenodo from
+SDUCloud, by selecting them and supplying a name for the publication.
 
 
 
@@ -153,7 +186,8 @@ The overview of publications
 .. figure::  images/screens/publications/publications.png
    :align:   center
 
-Here a new upload can be registered. Various meta have to entered to make the publication searcheable using relavant tags.
+Here a new upload can be registered. Various meta have to entered to make the
+publication searcheable using relavant tags.
 
 .. figure::  images/screens/publications/zenodo_website.png
    :align:   center
@@ -180,11 +214,20 @@ If there can not be made a connection to Zenodo - this screen will show
 Shares
 ------
 
-Following either having recieved a sharing invitation or shared a file with another user, the two lists 'Shared with Me' and 'Shared by Me' will be populated.
+Following either having recieved a sharing invitation or shared a file with
+another user, the two lists 'Shared with Me' and 'Shared by Me' will be
+populated.
 
-When a file is shared, the target user, or users, will receive a notification and the Shares-page will list both files that has been shared, and invitations. They also show the rights associated with the share, being READ, WRITE, and EXECUTE. If the file has been shared, the target user can revoke the sharing of the file, and if a user has been invited, they can Accept or Reject the invitation.
+When a file is shared, the target user, or users, will receive a notification
+and the Shares-page will list both files that has been shared, and invitations.
+They also show the rights associated with the share, being READ, WRITE, and
+EXECUTE. If the file has been shared, the target user can revoke the sharing of
+the file, and if a user has been invited, they can Accept or Reject the
+invitation.
 
-For the user sending the invitation, the invitations are shown under 'Shared by Me'. The user is here able to revoke the sharing or update the rights associated with the share.
+For the user sending the invitation, the invitations are shown under 'Shared by
+Me'. The user is here able to revoke the sharing or update the rights associated
+with the share.
 
 .. figure::  images/screens/shares/shares.png
    :align:   center
@@ -203,18 +246,24 @@ Design features
 Security
 --------
 
-As part of the GDPR compliance the following design patterns have been implemented:
+As part of the GDPR compliance the following design patterns have been
+implemented:
 
 Access Controls
 ---------------
 
 Wayf
 
-Privileged users are proxy users so all none system users are granted the least privilege.
+Privileged users are proxy users so all none system users are granted the least
+privilege.
 
-All duties within the system are handled by micro services that acts on behalf of the logged in user according to the actual permissions that have been granted to the users role.
+All duties within the system are handled by micro services that acts on behalf
+of the logged in user according to the actual permissions that have been granted
+to the users role.
 
-On the technical level all transactions (frontend/backend) are authenticated by Json Web Tokens https://jwt.io/ (JSR7519) which is granted to each user session as part of the authorisation process.
+On the technical level all transactions (frontend/backend) are authenticated by
+Json Web Tokens https://jwt.io/ (JSR7519) which is granted to each user session
+as part of the authorisation process.
 
 
 .. figure::  images/WAYF.png
@@ -229,16 +278,25 @@ Certificates from Digicert have been installed on all servers.
 Dataprotection
 --------------
 
-Encryption for data at rest and in motion prevents unauthorized access, it is transparent to applications and users, it provides a strong preventive control, and modern solutions typically experience low performance impact. Additional data protection technologies include management of encryption keys, redaction of application layer data, and masking of sensitive production data for use in nonproduction environments for testing and development purposes.
+Encryption for data at rest and in motion prevents unauthorized access, it is
+transparent to applications and users, it provides a strong preventive control,
+and modern solutions typically experience low performance impact. Additional
+data protection technologies include management of encryption keys, redaction of
+application layer data, and masking of sensitive production data for use in
+nonproduction environments for testing and development purposes.
 
 
 
 Auditing/Monitoring
 -------------------
 
-All subcomponents produces logs and audit trails. Filebeat/Logstash automatically collects all log files and their data are imported into Elastic Search (ELK-stack). The presentation tool used to present the logs is "Kibana".
+All subcomponents produces logs and audit trails. Filebeat/Logstash
+automatically collects all log files and their data are imported into Elastic
+Search (ELK-stack). The presentation tool used to present the logs is "Kibana".
 
-Automated monitoring of security and performance incidents to detect anomalous activity or behaviour including an automated escalation process including blocking of users or subcomponent if threat or odd behaviour is detected.
+Automated monitoring of security and performance incidents to detect anomalous
+activity or behaviour including an automated escalation process including
+blocking of users or subcomponent if threat or odd behaviour is detected.
 
 The Ceph cluster monitor looks like this
 
@@ -273,7 +331,6 @@ Overview, by design
 * :ref:`Security`
 * :ref:`Modularity`
 * :ref:`Fault-tolerance`
-
    
 .. toctree::
    :maxdepth: 2
