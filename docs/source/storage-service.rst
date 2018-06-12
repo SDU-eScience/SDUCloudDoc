@@ -83,7 +83,12 @@ Tests
 		- Create, List and reject
 		- Create, List and Update
 		- Create, List and Update on not own file
-
+	- Download
+		- Download File
+		- Download Folder
+		- Donload from non exisiting path
+		- Download Files Bulk
+		- Download Files Bulk with missing files
 - Service code
 	- Bulk Download
 		- Make a bulk download
