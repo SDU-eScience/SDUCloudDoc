@@ -15,16 +15,14 @@ Introduction
 ------------
 
 SduCloud have been designed and programmed at the eScience Center at the University Of Southern Denmark.
-
-The purpose is to provide a user interface that improves the usability of the HPC environment (Abacus2) for the common user. At the same time provide a data storage that secures the GDPR compliance. Meta-data can be attached to the stored files so in SduCloud. The meta-data are made searchable within the user interface.
-
-Files can be published through the integration to Zenodo.
-
 Its components are provided by the open source community.
 
-The functionality follows the requirements from the NSAS description.
+The purpose is to provide a user interface that improves the usability of the HPC environment (Abacus2) for the common user. At the same time provide a data storage that secures the GDPR compliance. One of the overall goals is to improve the searcheability for data that are already stored in SduCloud.
+That is done by added meta-data to a stored file stored files so in SduCloud. The meta-data (data about data) are made searchable within the SduCloud user interface. Later other search engines can be attached to SduClouds meta-data service. Another example of the implemantation of "Open Access"
+is the integration to Zenodo.
 
-Scaleability has a high priority in the design specification of the solution. This target have been reached by implementing all the "moving parts" as micro services and a event based messaging broker (Kafka).
+
+
 
 
 
@@ -225,7 +223,7 @@ On the technical level all transactions (frontend/backend) are authenticated by 
 
 Certificates
 ------------
-Certificates have been installed on all servers.
+Certificates from Digicert have been installed on all servers.
 
 
 Dataprotection
