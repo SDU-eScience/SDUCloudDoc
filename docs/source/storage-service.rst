@@ -1,36 +1,41 @@
 .. _Storage-service:
 
-Storage-service
-===============
+Storage Service
+================================================================================
 
 Version
--------
+--------------------------------------------------------------------------------
 
-1.0
+0.4.0
 
 Description
------------
+--------------------------------------------------------------------------------
 
 This service handles all file system events.
 
+Service Dependencies
+--------------------------------------------------------------------------------
 
-Service dependencies
-------------------------
+This microservice has the following internal dependencies.
 
-* :ref:`Auth-service`
-* :ref:`Notification-service`
-* :ref:`Service-common`
+* :ref:`auth-service`
+* :ref:`notification-service`
+* :ref:`service-common`
 
-Service interoperability
-------------------------
+Service Interoperability
+--------------------------------------------------------------------------------
+
+The following is a non-exhaustive list of internal services which use this
+microservice.
 
 * :ref:`app-service`
-* :ref:`Frontend-web`
-* :ref:`Metadata-service`
-* :ref:`Zenodo-service`
+* :ref:`frontend-web`
+* :ref:`metadata-service`
+* :ref:`zenodo-service`
 
 Tests
------
+--------------------------------------------------------------------------------
+
 - Controllers
 	- Files
 		- Annotate Files:	
@@ -41,7 +46,7 @@ Tests
 		- Copy Files:
 			- Make a copy of a file
 			- Make a copy from a non-existing path
-			- Make a copy of a file to an already exisiting directory path
+			- Make a copy of a file to an already existing directory path
 		- Create Directories:
 			- Create a directory with correct input
 			- Create a directory in home
@@ -122,12 +127,3 @@ Tests
 		- Revoke Grant
 	- XAttr
 		- Basic passing
-
-
-
-
-
-
-
-
-

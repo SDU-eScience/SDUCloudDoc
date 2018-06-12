@@ -2,14 +2,20 @@
 
 Ansible
 ========
-We install and deploy the system against HPC nodes by Ansible, which is an IT automation engine.
+
+We install and deploy the system against HPC nodes by Ansible, which is an IT
+automation engine.
 
 .. note::
-   For more information on Ansible installation, please refer to `<http://docs.ansible.com/ansible/latest/intro_installation.html>`_
+   For more information on Ansible installation, please refer to
+   `<http://docs.ansible.com/ansible/latest/intro_installation.html>`_
    
 Ansible Inventory Configuration
 --------------------------------
-Ansible does different tasks against different nodes. Ansible’s inventory, which locates at ``/etc/ansible/hosts``, manages the information of all the used nodes. The configuration for our Ansible's inventory is shown as bellow.
+
+Ansible does different tasks against different nodes. Ansible’s inventory,
+which locates at ``/etc/ansible/hosts``, manages the information of all the
+used nodes. The configuration for our Ansible's inventory is shown as bellow.
 
 .. _servers:
 
@@ -28,7 +34,12 @@ Ansible does different tasks against different nodes. Ansible’s inventory, whi
 
 Ansible Playbooks and Roles
 ------------------------------
-Each ``.yml`` file is a playbook to complete a single or series tasks. For example, in our case, ``db.yml`` installs and configures PostgreSQL while ``elk.yml`` installs and configures the entire ELK Stack respectively. Below is the tree structures of some playbook examples and their roles within the project.
+
+Each ``.yml`` file is a playbook to complete a single or series tasks. For
+example, in our case, ``db.yml`` installs and configures PostgreSQL while
+``elk.yml`` installs and configures the entire ELK Stack respectively. Below
+is the tree structures of some playbook examples and their roles within the
+project.
 
 Playbooks
 
@@ -110,4 +121,5 @@ Roles
            └── postgres.sh.j2
 
 .. note:
-   For more information on how we use Ansible to install, configure and deploy, please refer to `<https://github.com/SDU-eScience/Ansible>`_
+   For more information on how we use Ansible to install, configure and
+   deploy, please refer to `<https://github.com/SDU-eScience/Ansible>`_
