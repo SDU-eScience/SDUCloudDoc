@@ -3,10 +3,9 @@
 Applications
 ================================================================================
 
-**Running version:** 0.2.0
-
-**Depends on:** :ref:`service-common`, :ref:`auth-service`,
-:ref:`storage-service` 
+* **Running version:** 0.2.0
+* **Depends on:** :ref:`service-common`, :ref:`auth-service`,
+  :ref:`storage-service` 
 
 Summary
 --------------------------------------------------------------------------------
