@@ -11,6 +11,7 @@ serves as a data storage where the user can store their data in compliance
 with GDPR.
 
 The goal of this quickstart is to show the user how to:
+
 - Login to SDUCloud
 - Navigate SDUCloud
 - Upload/download files
@@ -43,6 +44,7 @@ corner.
    :align:   center
 
 The menu navigates to the five main parts of SDUCloud:
+
 - Dashboard
 	- Home screen of SDUCloud
 - Files
@@ -64,19 +66,17 @@ The Dashbord is the home screen of SDUCloud.
    :align:   center
 
 The Dashboard is showing 3 columns "Favorite Files", "Recently used
-Files", "Recent Analysis".
+Files", "Recent Analyses".
 
-- Favorite Files 
-    - The user can add a file to "favorite" which makes it
-easier to find when having to use it for several different purposes.
+- Favorite Files
 
+  - The user can add a file to "favorites" which makes it easier to find when having to use it for several different purposes.
 - Recently used Files
-    - Show files that the user have used earlier. This is
-sorted by time so that the  most recently used is at top
 
-- Recent Analysis 
-	- Contains links to applications that the user have
-executed within the Application section.
+  - Show files that the user have used earlier. This is sorted by time so that the  most recently used is at top
+- Recent Analyses
+
+  - Contains links to applications that the user have executed within the Application section.
 
 In the top right corner the user will find notifications
 
@@ -91,7 +91,7 @@ Upload A File
 -------------
 
 To upload a file, the user should move to the files part of SDUCloud using the
-menu. The page should now look something like this
+menu. The page should look something like this
 
 .. figure::  images/screens/files/files.png
    :align:   center
@@ -104,10 +104,10 @@ prompted with the upload dialog window.
 .. figure::  images/screens/files/upload_with_no_file.png
    :align:   center
 
-Here the user can either drag-and-drop a file or use the browse option to brose
+Here the user can either drag-and-drop a file or use the browse option to browse
 their computer. The user is able to upload one or more files, or a single tar.gz
-file that either can be extracted at upload or simply uploaded as the file it
-is. The files will be uploaded to the current folder.
+file that either can be extracted once uploaded or simply upload the tar.gz as 
+the file it is. The files will be uploaded to the current folder.
 
 .. figure::  images/screens/files/upload_with_file.png
    :align:   center
@@ -155,8 +155,8 @@ application. The applications usually have default values for the fields
 "Number of nodes", "Tasks per node", "Hours", "Minutes" and "Seconds". Even
 though it is possible to give the application more nodes or time, keep it close
 to what you think the applications really needs, since the scheduler at ABACUS
-2.0 uses these value to schedule. Giving the application more than it need might
-postpone your job unnessesary.
+2.0 uses these value to schedule efficiently. Giving the application more than 
+it need mightpostpone your job unnessesary.
 
 .. figure::  images/screens/applications/detailed_result_in_queue.png
    :align:   center
@@ -177,7 +177,7 @@ Download
 
 To download a file/folder either mark the file or click on the file dropdown and
 choose download. If a folder is choosen a .zip file will be generated for
-download.
+download. 
 
 Logout
 ------
@@ -189,10 +189,10 @@ Congratulations! You now have the knowledge to access SDUCloud, manage your
 files and running applications from SDUCloud.  
 Be sure to check out these other available features on SDUCloud:
 
-Creating project and search the metadata: :ref: `metadata-service`
+Creating project and search in the data: :ref:`Metadata-service`
 
-Share files with your colleagues on SDUCloud: :ref: `storage-service`
+Share files with your colleagues on SDUCloud: :ref:`Storage-service`
 
-Publish your work on Zenodo: :ref: `zenodo-service`
+Publish your work on Zenodo: :ref:`Zenodo-service`
 
 
