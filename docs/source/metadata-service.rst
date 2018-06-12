@@ -24,3 +24,21 @@ Service interoperability
 ------------------------
 
 * :ref:`Frontend-web`
+
+Tests
+------------------------
+- Controllers
+	- Metadata
+		- SimpleQuery
+		- Find By Path (No Project)
+		- Find By ID fail
+		- Find By Path
+		- Find By ID
+		- Update metadata
+	- Project
+		- Create and get project
+		- Crate and try to get not own project
+		- Create project with wrong path
+		- Create project but with annotation error
+		- Create existing project
+		- Get non existing project
