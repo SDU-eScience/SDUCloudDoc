@@ -31,7 +31,7 @@ Quick Start
 -----------
 
 To get started using SDUCloud please see our quick start guide:
-:ref:'quickstart'. This will show you how to access and navigate SDUCloud,
+:ref:`quickstart`. This will show you how to access and navigate SDUCloud,
 upload/download files and use the applications that are within SDUCloud.
 
 Design features
