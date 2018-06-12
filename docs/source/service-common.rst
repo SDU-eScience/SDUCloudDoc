@@ -11,7 +11,7 @@ Version
 Description
 -----------
 
-Here goes the main description of its functionality
+This a library that has various helder utilities used by the micro-services.
 
 
 
