@@ -96,7 +96,7 @@ menu. The page should look something like this
 .. figure::  images/screens/files/files.png
    :align:   center
 
-In the right side there is the possiblity to create a new folder or upload a
+In the right side there is the possibility to create a new folder or upload a
 file. If create a folder is selected, a new folder appears and a name can be
 given to to the folder.  If the upload files is selected, the user will be
 prompted with the upload dialog window.
