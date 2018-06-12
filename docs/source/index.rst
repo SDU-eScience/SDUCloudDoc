@@ -147,20 +147,34 @@ Publishing provides tools for publishing to Zenodo. Publications will list an ov
 
 The Publish option allows the user to upload a series of files to Zenodo from SDUCloud, by selecting them and supplying a name for the publication.
 
+
+
+
+The overview of publications
+
 .. figure::  images/screens/publications/publications.png
    :align:   center
+
+Here a new upload can be registered. Various meta have to entered to make the publication searcheable using relavant tags.
+
+.. figure::  images/screens/publications/zenodo_website.png
+   :align:   center
+
+Here the relevant files are selected
 
 .. figure::  images/screens/publications/file_selection.png
    :align:   center
 
-.. figure::  images/screens/publications/not_connected.png
-   :align:   center
+Here the progress of the upload to Zenodo can be seen.
 
 .. figure::  images/screens/publications/zenodo_progress.png
    :align:   center
 
-.. figure::  images/screens/publications/zenodo_website.png
+If there can not be made a connection to Zenodo - this screen will show
+
+.. figure::  images/screens/publications/not_connected.png
    :align:   center
+
 
 
 
