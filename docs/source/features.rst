@@ -5,9 +5,8 @@ Features
 .. toctree::
 	:maxdepth: 2
 
-    metadata-service
-	auth-service
-    notification-service
     storage-service
+    metadata-service
+    notification-service
     zenodo-service
 
