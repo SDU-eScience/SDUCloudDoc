@@ -85,6 +85,14 @@ todo_include_todos = False
 # a list of builtin themes.
 #Na
 html_theme_path = [alabaster.get_path()]
+html_sidebars = {
+    '**': [
+        'about.html',
+        'navigation.html',
+        'relations.html',
+        'searchbox.html',
+    ]
+}
 extensions = ['alabaster']
 #
 html_theme = 'alabaster'
@@ -96,7 +104,9 @@ def setup(app):
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+    'sidebar_includehidden': True
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
