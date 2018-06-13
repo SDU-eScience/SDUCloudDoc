@@ -22,6 +22,15 @@ integration to Zenodo_.
 
 .. _Zenodo: https://zenodo.org
 
+.. toctree::
+	:hidden:
+	:maxdepth: 2
+
+	Home <index>
+	Quick Start <quickstart>
+	Features <features>
+	Technical Overview <technical-overview>
+
 
 Quick Start
 --------------------------------------------------------------------------------

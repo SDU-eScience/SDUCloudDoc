@@ -1,16 +1,17 @@
 .. _quickstart:
 
 Quick Start
-===========
+================================================================================
 
-Introduction  
-------------  
-The purpose of SDUCloud is to provide a user interface that improves the 
-usability of the HPC environment (ABACUS 2.0) for the common user. It also 
-serves as a data storage where the user can store their data in compliance 
+Introduction
+--------------------------------------------------------------------------------  
+
+The purpose of SDUCloud is to provide a user interface that improves the
+usability of the HPC environment (ABACUS 2.0) for the common user. It also
+serves as a data storage where the user can store their data in compliance
 with GDPR.
 
-The goal of this quickstart is to show the user how to:
+The goal of this quick start is to show the user how to:
 
 - Login to SDUCloud
 - Navigate SDUCloud
@@ -18,11 +19,11 @@ The goal of this quickstart is to show the user how to:
 - Run applications
 
 Login
------
+--------------------------------------------------------------------------------
 
 To login to SDUCloud there are two options. One is to use WAYF. This makes it
 possible for all users affiliated with a danish educational institution to login
-without having a seperate user for SDUCloud. All they need is the login that
+without having a separate user for SDUCloud. All they need is the login that
 they use at their own institution. The other option is to login using a username
 and a password connected to SDUCloud.
 
@@ -33,7 +34,8 @@ Once the users credentials are approved they will always be forwarded to
 the dashboard of SDUCloud.
 
 Navigation 
----------- 
+--------------------------------------------------------------------------------
+
 No matter where the user is located at SDUCloud, the menu
 will always be located in the left side of the screen. If used in a small
 window or on a smaller screen, such as a mobile or tablet, the menu will
@@ -59,8 +61,9 @@ The menu navigates to the five main parts of SDUCloud:
 	- Navigate files that have been shared with the user.
 
 Dashboard
----------
-The Dashbord is the home screen of SDUCloud.  
+--------------------------------------------------------------------------------
+
+The dashboard is the home screen of SDUCloud.  
 
 .. figure::  images/screens/dashboard/dashboard.png
    :align:   center
@@ -68,17 +71,14 @@ The Dashbord is the home screen of SDUCloud.
 The Dashboard is showing 3 columns "Favorite Files", "Recently used
 Files", "Recent Analyses".
 
-- Favorite Files
+In "**Favorite Files**", the user can add a file to "favorites" which makes
+it easier to find when having to use it for several different purposes. The
+"**Recently used Files**", show files that the user have used earlier. This
+is sorted by time so that the most recently used is at top Finally the
+"**Recent Analyses**" contains links to applications that the user have
+executed within the Application section.
 
-  - The user can add a file to "favorites" which makes it easier to find when having to use it for several different purposes.
-- Recently used Files
-
-  - Show files that the user have used earlier. This is sorted by time so that the  most recently used is at top
-- Recent Analyses
-
-  - Contains links to applications that the user have executed within the Application section.
-
-In the top right corner the user will find notifications
+In the top right corner the user will find :ref:`notification-service`:
 
 .. figure::  images/screens/notifications/notifications.png
    :align:   center
@@ -87,8 +87,8 @@ Here the user will be notified when another user have shared a file with
 them, or if one of their applications have finished running and have returned
 with results.
 
-Upload A File
--------------
+Uploading Files
+--------------------------------------------------------------------------------
 
 To upload a file, the user should move to the files part of SDUCloud using the
 menu. The page should look something like this
@@ -104,10 +104,11 @@ prompted with the upload dialog window.
 .. figure::  images/screens/files/upload_with_no_file.png
    :align:   center
 
-Here the user can either drag-and-drop a file or use the browse option to browse
-their computer. The user is able to upload one or more files, or a single tar.gz
-file that either can be extracted once uploaded or simply upload the tar.gz as 
-the file it is. The files will be uploaded to the current folder.
+Here the user can either drag-and-drop a file or use the browse option to
+browse their computer. The user is able to upload one or more files, or a
+single ``.tar.gz`` file that either can be extracted once uploaded or simply
+upload the ``.tar.gz`` as the file it is. The files will be uploaded to the
+current folder.
 
 .. figure::  images/screens/files/upload_with_file.png
    :align:   center
@@ -123,18 +124,19 @@ of the screen. These options includes:
 - Download
 - Share
 
-These options are also available, in the file dropdown even if the file is not selected. 
+These options are also available, in the file dropdown even if the file is
+not selected.
 
 .. figure::  images/screens/files/dropdown_menu.png
    :align:   center
 
+It is also possible for the user to add a file or folder to their favorites
+by hovering above the file/folder and clicking the small start next to the
+name of the file/folder.
 
-It is also possible for the user to add a file or folder to their favorits by 
-hovering above the file/folder and clicking the small start next to the name 
-of the file/folder.
+Running an Application
+--------------------------------------------------------------------------------
 
-Run application
----------------
 By clicking the Applications tab in the menu, a submenu appears.
 If the user chooses "Run" they will be shown a list of possible applications 
 that are available to be run on the HPC environment (ABACUS 2.0).
@@ -156,7 +158,7 @@ application. The applications usually have default values for the fields
 though it is possible to give the application more nodes or time, keep it close
 to what you think the applications really needs, since the scheduler at ABACUS
 2.0 uses these value to schedule efficiently. Giving the application more than 
-it need mightpostpone your job unnessesary.
+it need might postpone your job unnecessary
 
 .. figure::  images/screens/applications/detailed_result_in_queue.png
    :align:   center
@@ -173,14 +175,14 @@ list "Recent Analyses".
  
 
 Download
---------
+--------------------------------------------------------------------------------
 
 To download a file/folder either mark the file or click on the file dropdown and
-choose download. If a folder is choosen a .zip file will be generated for
+choose download. If a folder is chosen a .zip file will be generated for
 download. 
 
 Logout
-------
+--------------------------------------------------------------------------------
 
 To perform a logout from SDUCloud. Simply click the cogwheels in the top right
 corner an choose logout.
@@ -189,10 +191,13 @@ Congratulations! You now have the knowledge to access SDUCloud, manage your
 files and running applications from SDUCloud.  
 Be sure to check out these other available features on SDUCloud:
 
-Creating project and search in the data: :ref:`Metadata-service`
+Learn More
+-------------------------------------------------------------------------------
 
-Share files with your colleagues on SDUCloud: :ref:`Storage-service`
-
-Publish your work on Zenodo: :ref:`Zenodo-service`
-
-
+* Make your data discoverable and search for other user's data: 
+  :ref:`Metadata-service`
+* Share files with your colleagues on SDUCloud: :ref:`Storage-service`
+* Publish your work on Zenodo: :ref:`Zenodo-service`
+* Go in depth with applications: :ref:`app-service`
+* Take a peek behind the curtains and learn about the internals of SDUCloud: 
+  :ref:`technical-overview`
