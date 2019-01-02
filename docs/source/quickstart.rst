@@ -111,7 +111,7 @@ prompted with the upload dialog window.
 
 Here the user can either drag-and-drop a file or use the browse option to
 browse their computer. The user is able to upload one or more files, or a
- ``.tar.gz`` or a ``.zip`` file that either can be extracted once uploaded or simply choose 
+ ".tar.gz" or a ".zip" file that either can be extracted once uploaded or simply choose 
 to upload the file as an archive. The files will be uploaded to the
 current folder.
 
@@ -147,12 +147,12 @@ empty their trash and thereby delete the files/folders for good.
 Browsing for an Application
 --------------------------------------------------------------------------------
 
-By clicking "App Store" in the menu, the user is shown the catalogue of applications
+By clicking "**App Store**" in the menu, the user is shown the catalogue of applications
 available on SDUCloud. By using the filter options on the right side, the user can limit
 their possiblities. Once the user have found the wanted application, is it possible to add the 
-application to "My Apps" for easy access in the future. This is done by hovering above
+application to "**My Apps**" for easy access in the future. This is done by hovering above
 the small bookmark on each application and clicking it. Now the bookmark is 
-constantly shown to indicate that this is an application that has been added to "My Apps".
+constantly shown to indicate that this is an application that has been added to "**My Apps**".
 
 
 .. figure::  images/screens/applications/browse_applications.png
@@ -162,8 +162,8 @@ constantly shown to indicate that this is an application that has been added to 
 To get further infomation about an application, the user can click on it and they will
 be shown a more detailed view of the application. Here it will also be possible for 
 the user to find older versions of the application, should it be needed. It is also 
-possible for the user to add the application to "My Apps" by using the 
-"Add to My Apps" button.
+possible for the user to add the application to "**My Apps**" by using the 
+"**Add to My Apps**" button.
 
 .. figure::  images/screens/applications/application_details.png
    :align:   center
@@ -173,8 +173,8 @@ Running an Application
 --------------------------------------------------------------------------------
 
 There are two ways of running an application. Either the user can go to the detailed 
-view of an application and push the "Run Application" button on the right side. Or the
-user can run it directly from "My Apps" if they have added it already.
+view of an application and push the "**Run Application**" button on the right side. Or the
+user can run it directly from "**My Apps**" if they have added it already.
 Before the application can be run the user is asked to fill in the require infomation
 or input files. Usually the application comes with default values for time limitations.
 Even though it is possible to give the application more time, keep it close to what 
@@ -186,8 +186,8 @@ Giving the application more than it need might postpone your job unnecessary.
   :align:   center
 
 Once the application have been started, the user is forwarded to the progress view 
-of that specific job. This can also be found by clicking on the job under "Recent Jobs" 
-on the Dashboard or in the "My Results" section of the menu. 
+of that specific job. This can also be found by clicking on the job under "**Recent Jobs**" 
+on the Dashboard or in the "**My Results**" section of the menu. 
 Once the job have completed a link to the result files will be available
 in the progress view.
 
