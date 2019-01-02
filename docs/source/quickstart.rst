@@ -21,14 +21,10 @@ The goal of this quick start is to show the user how to:
 Login
 --------------------------------------------------------------------------------
 
-To login to SDUCloud there are two options. One is to use WAYF. This makes it
+To login to SDUCloud the user will have to use WAYF (Where Are You From). This makes it
 possible for all users affiliated with a danish educational institution to login
 without having a separate user for SDUCloud. All they need is the login that
-they use at their own institution. The other option is to login using a username
-and a password connected to SDUCloud.
-
-.. figure::  images/screens/Login/LoginScreen.png
-   :align:   center
+they use at their own institution. 
 
 Once the users credentials are approved they will always be forwarded to
 the dashboard of SDUCloud.
@@ -45,20 +41,22 @@ corner.
 .. figure::  images/screens/dashboard/NavigationBar.png
    :align:   center
 
-The menu navigates to the five main parts of SDUCloud:
+The menu navigates to the seven main parts of SDUCloud:
 
 - Dashboard
 	- Home screen of SDUCloud
 - Files
 	- Navigate your filesystem
-- Applications
-	- Run applications
-	- Show results
-- Publishing
-	- Publications
-	- Publish new publication
 - Shares
-	- Navigate files that have been shared with the user.
+  - Navigate files that have been shared with the user.
+- My Applications
+	- Run applications.
+- App Store
+	- Browse all available applications and add them to "My Application" for easy access.
+- My Results
+  - Show your results from the applications you have run.
+- Activity
+  - Gives you an overview of all acitivties regarding your files. 
 
 Dashboard
 --------------------------------------------------------------------------------
@@ -68,15 +66,22 @@ The dashboard is the home screen of SDUCloud.
 .. figure::  images/screens/dashboard/dashboard.png
    :align:   center
 
-The Dashboard is showing 3 columns "Favorite Files", "Recently used
-Files", "Recent Analyses".
+The Dashboard is showing 6 columns: "Favorite Files", "Recently Used
+Files", "Recent Jobs", "Recent Notifications", "Storage Used", and "Compute Time Used".
 
 In "**Favorite Files**", the user can add a file to "favorites" which makes
 it easier to find when having to use it for several different purposes. The
-"**Recently used Files**", show files that the user have used earlier. This
-is sorted by time so that the most recently used is at top Finally the
-"**Recent Analyses**" contains links to applications that the user have
-executed within the Application section.
+"**Recently Used Files**", show files that the user have used earlier. This
+is sorted by time so that the most recently used is at top. The
+"**Recent Jobs**" contains links to applications that the user have
+executed within the Application section. The "**Recent Notifications**" shows the 
+notfications that have been recieved by the user. Unread notifications will be
+highlighted. By using the checkmark in the upper right corner the user marks all the 
+notifications as read.
+"**Storage Used**" shows the user how much storage they are currently using. And finally
+"**Compute Time Used**" shows the user how much time he/she have used on computations. Both storage 
+and compute time have the abilltiy to show a chart of how the user have used his/hers resources
+over time.
 
 In the top right corner the user will find :ref:`notification-service`:
 
@@ -96,8 +101,8 @@ menu. The page should look something like this
 .. figure::  images/screens/files/files.png
    :align:   center
 
-In the right side there is the possibility to create a new folder or upload a
-file. If create a folder is selected, a new folder appears and a name can be
+In the right side there is the possibility to create a new folder, upload a
+file or search. If create a folder is selected, a new folder appears and a name can be
 given to to the folder.  If the upload files is selected, the user will be
 prompted with the upload dialog window.
 
@@ -106,8 +111,8 @@ prompted with the upload dialog window.
 
 Here the user can either drag-and-drop a file or use the browse option to
 browse their computer. The user is able to upload one or more files, or a
-single ``.tar.gz`` file that either can be extracted once uploaded or simply
-upload the ``.tar.gz`` as the file it is. The files will be uploaded to the
+ ``.tar.gz`` or a ``.zip`` file that either can be extracted once uploaded or simply choose 
+to upload the file as an archive. The files will be uploaded to the
 current folder.
 
 .. figure::  images/screens/files/upload_with_file.png
@@ -120,9 +125,10 @@ of the screen. These options includes:
 - Move
 - Copy
 - Rename
-- Delete
+- Move to Trash
 - Download
 - Share
+- Properties
 
 These options are also available, in the file dropdown even if the file is
 not selected.
@@ -134,45 +140,59 @@ It is also possible for the user to add a file or folder to their favorites
 by hovering above the file/folder and clicking the small start next to the
 name of the file/folder.
 
+When a file or a folder is moved to trash, it is not deleted. To do this, the user 
+should navigate to the trash folder in their home folder. Here they will be able to
+empty their trash and thereby delete the files/folders for good.
+
+Browsing for an Application
+--------------------------------------------------------------------------------
+
+By clicking "App Store" in the menu, the user is shown the catalogue of applications
+available on SDUCloud. By using the filter options on the right side, the user can limit
+their possiblities. Once the user have found the wanted application, is it possible to add the 
+application to "My Apps" for easy access in the future. This is done by hovering above
+the small bookmark on each application and clicking it. Now the bookmark is 
+constantly shown to indicate that this is an application that has been added to "My Apps".
+
+
+.. figure::  images/screens/applications/browse_applications.png
+   :align:   center
+
+
+To get further infomation about an application, the user can click on it and they will
+be shown a more detailed view of the application. Here it will also be possible for 
+the user to find older versions of the application, should it be needed. It is also 
+possible for the user to add the application to "My Apps" by using the 
+"Add to My Apps" button.
+
+.. figure::  images/screens/applications/application_details.png
+   :align:   center
+
+
 Running an Application
 --------------------------------------------------------------------------------
 
-By clicking the Applications tab in the menu, a submenu appears.
-If the user chooses "Run" they will be shown a list of possible applications 
-that are available to be run on the HPC environment (ABACUS 2.0).
-
-.. figure::  images/screens/applications/applications_list.png
-   :align:   center
-
-If the user hover above the name of an application he/she is able to get a
-description of the application. If the user press the run button he/she will be
-forwarded to that specific application setup and are able to add the input files
-that he/she would like to be included in the execution of the application.
+There are two ways of running an application. Either the user can go to the detailed 
+view of an application and push the "Run Application" button on the right side. Or the
+user can run it directly from "My Apps" if they have added it already.
+Before the application can be run the user is asked to fill in the require infomation
+or input files. Usually the application comes with default values for time limitations.
+Even though it is possible to give the application more time, keep it close to what 
+you think the applications really needs, since the scheduler at ABACUS 2.0 uses these 
+values to schedule efficiently. 
+Giving the application more than it need might postpone your job unnecessary.
 
 .. figure::  images/screens/applications/run_application.png
-   :align:   center
+  :align:   center
 
-Once the user submits the application, a page is shown with the progress of the
-application. The applications usually have default values for the fields
-"Number of nodes", "Tasks per node", "Hours", "Minutes" and "Seconds". Even
-though it is possible to give the application more nodes or time, keep it close
-to what you think the applications really needs, since the scheduler at ABACUS
-2.0 uses these value to schedule efficiently. Giving the application more than 
-it need might postpone your job unnecessary
+Once the application have been started, the user is forwarded to the progress view 
+of that specific job. This can also be found by clicking on the job under "Recent Jobs" 
+on the Dashboard or in the "My Results" section of the menu. 
+Once the job have completed a link to the result files will be available
+in the progress view.
 
-.. figure::  images/screens/applications/detailed_result_in_queue.png
-   :align:   center
-
-Once the application is done the output files will be shown as part of the
-progress page.
-
-.. figure::  images/screens/applications/detailed_result_finished.png
-   :align:   center
-
-It is possible to access the progress page either by clicking on "Results" under
-the Applications menu tab, the "Jobs" folder in Files or on the dashboard in the
-list "Recent Analyses".
- 
+.. figure::  images/screens/applications/application_progress.png
+  :align:   center
 
 Download
 --------------------------------------------------------------------------------
@@ -184,7 +204,7 @@ download.
 Logout
 --------------------------------------------------------------------------------
 
-To perform a logout from SDUCloud. Simply click the cogwheels in the top right
+To perform a logout from SDUCloud. Simply click the avatar in the top right
 corner an choose logout.
 
 Congratulations! You now have the knowledge to access SDUCloud, manage your
