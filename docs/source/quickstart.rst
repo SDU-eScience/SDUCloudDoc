@@ -111,7 +111,7 @@ prompted with the upload dialog window.
 
 Here the user can either drag-and-drop a file or use the browse option to
 browse their computer. The user is able to upload one or more files, or a
- ".tar.gz" or a ".zip" file that either can be extracted once uploaded or simply choose 
+".tar.gz" or a ".zip" file that either can be extracted once uploaded or simply choose 
 to upload the file as an archive. The files will be uploaded to the
 current folder.
 
