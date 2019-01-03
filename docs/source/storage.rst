@@ -3,11 +3,6 @@
 Storage
 ================================================================================
 
-* **Running version:** 0.4.0
-* **Depends on:** :ref:`auth-service`, :ref:`notification-service`, 
-  :ref:`service-common`
-* **Technical tests:** :ref:`storage-service-test`
-
 Summary
 --------------------------------------------------------------------------------
 
