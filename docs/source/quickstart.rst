@@ -40,7 +40,6 @@ corner.
 
 .. figure::  images/screens/dashboard/NavigationBar.png
   :align: center
-  :height: 50px
 
 The menu navigates to the seven main parts of SDUCloud:
 
