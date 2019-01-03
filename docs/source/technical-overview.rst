@@ -41,8 +41,6 @@ Elasticsearch. We use the analytics functionality of Elasticsearch to, in
 real-time, monitor the health of SDUCloud. Using Kibana_ we are
 able to visualize the data.
 
-.. 
-
 .. figure::  images/kibana.png
    :align:   center
 
