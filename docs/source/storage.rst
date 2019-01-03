@@ -27,9 +27,9 @@ prompted with the upload dialog window.
    :align:   center
 
 Here the user can either drag-and-drop a file or use the browse option to browse
-their computer. The user is able to upload one or more files, or a single tar.gz
-file that either can be extracted once uploaded or simply upload the tar.gz as 
-the file it is. The files will be uploaded to the current folder.
+their computer. The user is able to upload one or more files, or a "tar.gz" or ".zip"
+file that either can be extracted once uploaded or simply upload as the archive. 
+The files will be uploaded to the current folder.
 
 .. figure::  images/screens/files/upload_with_file.png
    :align:   center
@@ -57,19 +57,22 @@ of the file/folder.
 
 Sharing Files
 --------------------------------------------------------------------------------
+To share a file/folder, the user should move to the files part of SDUCloud, and 
+select one or more files/folders and click the share option in the right side of 
+the screen. The user will then be promted to specify the username of the user he/she 
+wants to share these files/folders with. The user should also specify whether the 
+recipient should be able to see and modify the shared files/folders or simply only 
+be able to see them.
 
-TODO Write this section
+Before the share is completed the recipient also have to accept the share. They
+will be notified once the request have been made, and they will be given the option
+to either accept or deny the request.
 
-Data Discovery
---------------------------------------------------------------------------------
+To get an overview of a users shared files and folders, the user can enter the "**Shares**"
+part in the menu. Here the user will be able to see all pending and accepted requests.
+Here the user will also be able to change the permissions of the files that they are 
+sharing with others.
 
-It is also possible to make your data discoverable by other users, and to search
-for data made discoverable. This is discussed here: :ref:`metadata-service`.
-
-Data Publishing
---------------------------------------------------------------------------------
-
-It is possible to publish your datasets directly from within SDUCloud to
-Zenodo_. You can read about this here: :ref:`zenodo-service`.
-
-.. _Zenodo: https://zenodo.org
+The user who owns the file is of course always in control of the share and can 
+revoke it any time he/she wants to. Likewise is the recipient also able to stop being
+part of a share, and removing it from their own file system.

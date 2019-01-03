@@ -38,13 +38,10 @@ and distribute published content [#]_.
 Kafka is also used as our backbone for all logging. All file activities are
 automatically sent through Kafka, and then shipped, through Logstash_, into
 Elasticsearch. We use the analytics functionality of Elasticsearch to, in
-real-time, monitor the health of SDUCloud. Using Grafana_ and Kibana_ we are
+real-time, monitor the health of SDUCloud. Using Kibana_ we are
 able to visualize the data.
 
-.. figure::  images/grafana.png
-   :align:   center
-
-   Real time monitoring of Ceph using Grafana
+.. 
 
 .. figure::  images/kibana.png
    :align:   center
@@ -60,6 +57,5 @@ able to visualize the data.
 .. _Elasticsearch: https://www.elastic.co/products/elasticsearch
 .. _Wikipedia: https://wikipedia.org
 .. _Kafka: https://kafka.apache.org
-.. _Grafana: https://grafana.com/
 .. _Kibana: https://www.elastic.co/products/kibana
 .. _Logstash: https://www.elastic.co/products/logstash

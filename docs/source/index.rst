@@ -17,10 +17,7 @@ goals is to improve the searchability for data that are already stored in
 SDUCloud. This is done by adding metadata to the stored files in SDUCloud. The
 metadata (data about data) are made searchable within the SDUCloud user
 interface. Later other search engines can be attached to SDUCloud's metadata
-service. Another example of the implementation of "Open Access" is the
-integration to Zenodo_.
-
-.. _Zenodo: https://zenodo.org
+service.
 
 .. toctree::
 	:hidden:
@@ -28,7 +25,6 @@ integration to Zenodo_.
 
 	Home <index>
 	Quick Start <quickstart>
-	Features <features>
 	Technical Overview <technical-overview>
 
 
