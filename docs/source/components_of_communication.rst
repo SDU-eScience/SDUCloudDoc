@@ -4,7 +4,7 @@ Components of Communication
 =============================
 
 
-.. figure::  images/components_of_communication.png
+.. figure::  images/componentsOfCommunication.png
    :align:   center
    :class:   components-of-communication
 

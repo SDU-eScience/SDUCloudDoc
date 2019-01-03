@@ -14,7 +14,7 @@ architecture. A microservice architecture allows us to deliver a scalable
 solution with little to no down time. The backend is built on top of
 **open-source components** that follow the same philosophy.
 
-.. figure:: images/components_of_communication.png
+.. figure:: images/componentsOfCommunication.png
    :align:  center
 
    Overall architecture of communication in SDUCloud
