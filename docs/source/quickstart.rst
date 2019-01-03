@@ -39,6 +39,7 @@ collapse but can still be unfolded by using the menu button in the top left
 corner.
 
 .. figure::  images/screens/dashboard/NavigationBar.png
+  :hight: 150px
   :align:   center
 
 The menu navigates to the seven main parts of SDUCloud:
