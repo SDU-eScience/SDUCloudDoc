@@ -188,7 +188,7 @@ Giving the application more than it need might postpone your job unnecessary.
 Once the application have been started, the user is forwarded to the progress view 
 of that specific job. This can also be found by clicking on the job under "**Recent Jobs**" 
 on the Dashboard or in the "**My Results**" section of the menu. 
-Once the job have completed a link to the result files will be available
+Once the job have completed, a link to the result files will be available
 in the progress view.
 
 .. figure::  images/screens/applications/application_progress.png
@@ -214,10 +214,6 @@ Be sure to check out these other available features on SDUCloud:
 Learn More
 -------------------------------------------------------------------------------
 
-* Make your data discoverable and search for other user's data: 
-  :ref:`Metadata-service`
-* Share files with your colleagues on SDUCloud: :ref:`Storage-service`
-* Publish your work on Zenodo: :ref:`Zenodo-service`
-* Go in depth with applications: :ref:`app-service`
+* Share files with your colleagues on SDUCloud: :ref:`storage`
 * Take a peek behind the curtains and learn about the internals of SDUCloud: 
   :ref:`technical-overview`
