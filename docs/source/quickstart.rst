@@ -201,6 +201,18 @@ To download a file/folder either mark the file or click on the file dropdown and
 choose download. If a folder is chosen a .zip file will be generated for
 download. 
 
+Searching
+--------------------------------------------------------------------------------
+At the top part of SDUCloud is there a search feature. This allowes the user to search for 
+files and applications that contains the seach query as a part of their name.
+
+If the user clicks on the small arrow of the search bar, more search options will be made 
+available to the user.
+For files the user can narrow their search by stating a timeslot for creation or modified, 
+whether he/she is searching for a folder or file, what type of file it is (file extentions) 
+and what sensitivity level the file have. 
+
+
 Logout
 --------------------------------------------------------------------------------
 
@@ -215,5 +227,6 @@ Learn More
 -------------------------------------------------------------------------------
 
 * Share files with your colleagues on SDUCloud: :ref:`storage`
+* Modify you avatar to your likings: :ref:`avatar`
 * Take a peek behind the curtains and learn about the internals of SDUCloud: 
   :ref:`technical-overview`
