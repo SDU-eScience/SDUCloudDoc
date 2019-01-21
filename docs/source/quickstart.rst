@@ -203,10 +203,10 @@ download.
 
 Searching
 --------------------------------------------------------------------------------
-At the top part of SDUCloud is there a search feature. This allowes the user to search for 
+At the top part of SDUCloud the user finds a search feature. This allowes the user to search for 
 files and applications that contains the seach query as a part of their name.
 
-If the user clicks on the small arrow of the search bar, more search options will be made 
+If the user clicks on the small arrow in the search bar, more search options will be made 
 available to the user.
 For files the user can narrow their search by stating a timeslot for creation or modified, 
 whether he/she is searching for a folder or file, what type of file it is (file extentions) 
